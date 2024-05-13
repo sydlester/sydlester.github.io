@@ -1,0 +1,262 @@
+%------------------------
+% Sydney Lester Resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+% Dependencies
+\usepackage{array}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{changepage}
+\usepackage{qrcode}
+\input{glyphtounicode}
+
+% Font
+\usepackage{sansmathfonts}
+\usepackage[T1]{fontenc}
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+
+% Page Style
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins and Spacing
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\setlength{\footskip}{5pt}
+
+% Misc formatting
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections header formatting
+\titleformat{\section}{
+  \vspace{-2pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% Custom commands for section formatting
+% ------BEGIN--------
+
+\newcommand{\summary}[1]{
+  \medskip
+  \begin{adjustwidth}{1em}{0pt} 
+    #1\vspace{-5pt}
+  \end{adjustwidth}
+}
+
+\newcommand{\resumeItem}[1]{
+  \item{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\experienceDescription}[1]{
+  \item{
+    \begin{adjustwidth}{1em}{0pt} 
+      #1\vspace{-8pt}
+    \end{adjustwidth}
+  }%
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \hspace{1em}\textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5 pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{#1} & \textit{#2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubItem}[1]{
+    \resumeItem{#1}\vspace{-4pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{
+    \begin{itemize}[leftmargin=0.15in, label={}]
+}
+
+\newcommand{\resumeSubHeadingListEnd}{
+    \end{itemize}
+}
+
+\newcommand{\resumeItemListStart}{
+    \begin{itemize}
+}
+
+\newcommand{\resumeItemListEnd}{
+    \end{itemize}\vspace{-5pt}
+}
+% ------END------
+
+%------RESUME START------
+\begin{document}
+
+%------HEADING------
+\begin{tabular}{@{}p{2.0cm}@{\hskip 0.5cm}p{0.85\textwidth}@{}}
+ \raggedright\qrcode[hyperlink]{sydlester.github.io} 
+ &
+ \raggedright \textbf{\Huge \scshape Sydney Lester} \\ \vspace{3pt}
+ \raggedright\href{mailto:sydneylester31@gmail.com}{{sydneylester31@gmail.com}} $|$
+ \href{https://sydlester.github.io}{{sydlester.github.io}} $|$
+ \href{https://maps.app.goo.gl/TPcjf62CZ2uBmf4V9}{{Durham, North Carolina}}
+\end{tabular}
+\vspace{-20pt}
+
+%------Summary------
+\section{}\summary{
+    I'm an adventurous and outgoing third-year Computer Science student with a passion for problem-solving and creativity. As someone who finds joy in deriving order from complexity, I'm equally proficient in organizing both data and people.  I have a keen interest in mathematics theory, databases, and user interface design, and I am excited for an opportunity to apply my creativity, skills and passions to impactful and innovative work. I am actively seeking a software engineering internship where I can contribute to projects that make a meaningful difference in people's lives or contribute positively to the environment.
+}
+
+%------EDUCATION------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Duke University}{Durham, NC}{Bachelor of Science - Computer Science}{Aug. 2021 -- May 2025 (Expected)}
+      \experienceDescription{
+          Curriculum in Architecture, Data Structures, Algorithm Design \& Analysis, Discrete Mathematics, Machine Learning \& Data Science, Database Systems, Cryptography \& Security, Data Analysis \& Optimization
+        }
+    \medskip
+    \resumeSubheading{\emph{Semester Abroad--} University of Otago}{Dunedin, New Zealand}{}{June 2023 -- Nov. 2023}
+  \resumeSubHeadingListEnd
+
+%------TECH SKILLS------
+\section{Technical Skills}
+    \begin{itemize}[leftmargin=0.15in, label={}]{
+      \small{\item{
+        \textbf{Languages:}{
+            Java, C/C++, SQL, R, XPath, Python, Bash, JavaScript, HTML/CSS, LaTex
+        } \\
+        \smallskip\textbf{Technologies:}{
+            Flask, React, Node, Git, GitHub, Docker/Containers, REST, OAuth, PKI
+        } \\
+        \smallskip\textbf{Software Engineering:}{
+            SDLC, User interfaces, Database Design, Debugging, Troubleshooting, DevOps, Testing}
+        } \\
+        \smallskip\textbf{Soft Skills:}{
+            Organization, Project Management, Content Development, Documentation, Graphic Arts
+        }
+      }
+    }
+    \end{itemize}
+
+%------EXPERIENCE------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Teaching Assistant}{January 2024 -- Present}{Duke University Department of Computer Science}{Durham, NC}
+      \experienceDescription{
+           As a TA for Discrete Mathematics, I learned how to organize and explain deeply technical topics in different ways.  I developed an intuition for identifying sources of misunderstanding or confusion and gained invaluable confidence and experience decomposing complex problems and designing solutions.
+      }
+      \resumeItemListStart
+        \resumeItem{
+           Supported faculty for very large course sections by preparing and evaluating material related to boolean algebra, proofs, combinatorial optimization, and graph theory.
+        }
+        \resumeItem{
+            Helped students be successful by developing sample problems and solutions, offering structured guidance during office hours, and providing detailed feedback on assignments.
+        }
+        \resumeItem{
+            Led other TAs in content preparation and collected metrics to provide insights for improved student progress and comprehension.
+        }
+      \resumeItemListEnd
+      
+    \resumeSubheading{Research Intern}{May 2022 -- July 2022}{Duke University Marine Laboratory}{Beaufort, NC}
+      \experienceDescription{
+        I joined a multi-disciplinary team to study the effects of recreational beach usage on the nesting behavior of wild sea turtles.  I learned teamwork, experimental design, and data collection and analysis techniques--- including anomaly and pattern detection.
+      }
+      \resumeItemListStart
+        \resumeItem{
+          Worked with Marine Scientists and rangers from the National Park Service to gather turtle telemetry, nest location and topological data, and recreational visitor usage patterns from remote areas of the Cape Lookout National Seashore.
+        }
+        \resumeItem{
+          Analysis to identify causal pathways and quantify relationships between different experimental parameters.
+        }
+        \resumeItem{
+          Documented results and presented recommendations for optimizing the value of the park for both recreational use and wildlife.
+        }
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%------PROJECTS------
+\section{Personal Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading{\textbf{Starify} $|$ \emph{Node, JavaScript, Html/Css, React, Jest, OAuth}}{2023}
+       \experienceDescription{
+           My goals for this project were to build a highly stylize graphical interface with the React JavaScript framework, learn REST API's, and experiment with Authentication and Authorization.
+        }
+        \resumeItemListStart
+          \resumeItem{
+              Developed a web client application that aggregates a user’s Spotify listening data from several time periods and presents a visualization in a retro arcade game UX.
+          }
+          \resumeItem{
+              Integrated Spotify's OAuth services and several data-plane APIs.
+          }
+      \resumeItemListEnd
+          
+      \resumeProjectHeading{\textbf{eCommerce Marketplace} $|$ \emph{Python, Flask, Nginx, Docker, PostgreSQL, GitHub}}{2022}
+        \experienceDescription{
+           This was my first experience building a full-stack, multi-tier application.  We simulated the full software development life cycle (SDLC) from design to release, including site reliability engineering and DevOps.
+        }
+        \resumeItemListStart
+          \resumeItem{
+              Created a full-featured eCommerce site with products search, shopping cart, and purchase functions for buyer accounts, as well as inventory control, a product catalogue, and shipping management capabilities for sellers.
+          }
+          \resumeItem{
+              Implemented a normalized relational database schema, CI/CD pipeline, and live site monitoring.
+          }
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%------PERSONAL INVOLVEMENT------
+\section{Leadership \& Personal Involvement}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Duke Ski \& Board}{Aug. 2022 -- Present}{President, 2024-25; Equipment Chair 2023-24}{Durham, NC}
+      \experienceDescription{
+        Executive leadership role charged with the procurement and management of team training and competitive equipment, along with fundraising and financing of the same.  While chair, I created an inventory control process and succeeded in securing a university commitment to provide year-round training facilities on campus.
+      }
+    \medskip
+    \resumeSubheading{Press Photographer}{Aug. 2022 -- Present}{Duke Chronicle}{Durham, NC}
+      \experienceDescription{
+        Produce and edit photos of live Duke sporting events.
+      }
+    \medskip
+    \resumeSubheading{Radio DJ}{Aug. 2022 -- Present}{WXDU College Radio}{Durham, NC}
+      \experienceDescription{
+        Weekly live music and variety broadcast.
+      }
+  \resumeSubHeadingListEnd
+
+\end{document}

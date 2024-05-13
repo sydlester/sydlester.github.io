@@ -1,0 +1,99 @@
+.creative-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid lightgrey;
+}
+
+.creative-description {
+    justify-content: right;
+    padding: 0;
+}
+
+.creative-description h2{
+    font-family: pix;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0;
+    color: black;
+    text-shadow: white 3px 3px 0;
+}
+
+.creative-description p{
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.creative-slider {
+    width: 700px;
+    justify-content: right;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.slider-container{
+    margin: 0;
+    padding: 0;
+}
+
+.carouselItem{
+    margin: 0 10px;
+    overflow:"hidden";
+    padding-bottom: 10px;
+}
+
+.carouselItem img{
+    box-shadow: 10px 10px 0 rgb(144, 227, 255);
+}
+
+.creative-button-container{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.creative-button-container a {
+    display: inline-block;
+    background-repeat: no-repeat;
+    color: rgb(0, 5, 0);
+    padding: 10px;
+    padding-left: 40px;
+    margin-right: 10px;
+    border: 2px solid;
+    background-size: 20px;
+    background-position: 11px;
+    text-decoration: none;
+    font-family: pix;
+    border-radius: 5px;
+}
+
+.creative-button-container .chronicle {
+    border-color: black;
+    background-color: rgb(144, 227, 255);
+    background-image: url(../Styles/camera.svg);
+  }
+
+  .creative-button-container .art {
+    border-color: black;
+    background-color: rgb(144, 227, 255);
+    background-image: url(../Styles/art.png);
+  }
+
+  .allart-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .allart-column {
+    flex: 25%;
+    max-width: 24%;
+    padding: 0 4px;
+  }
+  
+  .allart-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }

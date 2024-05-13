@@ -1,0 +1,75 @@
+@font-face {
+  font-family: pix;
+  src: url(dogicapixel.ttf);
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-image: url(../Images/CloudBackground.png);
+    background-size: cover;
+}
+
+.navbutton-container{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  font-family: pix;
+}
+
+.name{
+  color: black;
+  font-weight: bolder;
+  text-shadow: 3px 3px 0px white;
+  font-size: 20px;
+}
+  
+.navbar {
+    height: 150px;
+    position: relative;
+    font-weight: bold;
+}
+
+.nav-elements ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.nav-elements ul li{
+  margin-right: 30px;
+}
+
+.nav-elements ul a {
+  font-size: 20px;
+  color: #011702;
+  text-decoration: none;
+}
+
+.nav-elements ul a.active {
+  color: #011702;
+  position: relative;
+}
+
+.nav-elements ul a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #011702;
+}
+
+.link-button {
+  color: black;
+  margin-left: 7px;
+}

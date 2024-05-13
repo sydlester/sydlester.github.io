@@ -1,0 +1,39 @@
+@font-face {
+    font-family: pix;
+    src: url(dogicapixel.ttf);
+}
+
+.page-content{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+    justify-content: center;
+    min-height: 100%;
+}
+
+.page-content h2{
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: pix;
+    text-shadow: 3px 3px 0px white;
+}
+/* 
+.about-me-body{
+    width: 700px;
+    margin: 0 auto;
+    padding: 0 15px;
+    justify-content: center;
+} */
+
+/* .about-me-body img{
+    width: 300px;
+    margin: 20px;
+}
+
+.about-me-body-content{
+    margin: 0 20px;
+} */
+
+/* .page-content p{
+    border-bottom: 2px solid lightgray;
+} */
