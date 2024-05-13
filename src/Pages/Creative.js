@@ -36,7 +36,7 @@ class Creative extends Component {
               art (I've made merchandise for most of the clubs I'm part of!), as well as painting. 
             </p>
             <p>
-              I love all things creative, and I'm always looking for new kinds of art and mediums to try. Currently, I'm learning how to crochet.
+              I love all things creative, and I'm always looking for new kinds of art and mediums to try. Right now, I'm learning how to crochet.
             </p>
             <p>
               You can see more of my work at the link below!
