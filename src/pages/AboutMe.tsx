@@ -1,14 +1,13 @@
-import {
-  ExperienceCard,
-  mockProps as experienceMock,
-} from "../components/ExperienceCard";
+import { ExperienceCard } from "../components/ExperienceCard";
 import {
   LeadershipCard,
   mockProps as leadershipMock,
 } from "../components/LeadershipCard";
 import { AboutMeHeader } from "../components/AboutMeHeader";
 import styles from "./AboutMe.module.css";
-import { URL_LIST } from "../const";
+import { PopUpList, URL_LIST, experienceList, popUpList } from "../const";
+import TextPopUp from "../components/TextPopUp";
+import { useState } from "react";
 
 const Intro = () => {
   return (
@@ -39,19 +38,49 @@ const Intro = () => {
 };
 
 export default function AboutMe() {
+  const [showPopUp, setShowPopUp] = useState(false);
+  const [popUpProps, setPopUpProps] = useState<PopUpList>({
+    title: "",
+    description: "",
+  });
+
+  const handleShowPopUp = () => {
+    setShowPopUp(!showPopUp);
+  };
+
+  const handlePopUp = (props: PopUpList) => {
+    setPopUpProps(props);
+    handleShowPopUp();
+  };
+
   return (
     <div className={styles.wrapper}>
       <Intro />
+      {showPopUp && (
+        <TextPopUp content={popUpProps} onClose={handleShowPopUp} />
+      )}
       <div className={styles.aboutMeContainer}>
         <AboutMeHeader />
         <div className={styles.aboutMeContent}>
           <div className={styles.experienceWrapper}>
             <h2>Academic</h2>
-            <ExperienceCard {...experienceMock} />
+            <ExperienceCard
+              content={experienceList[0]}
+              onReadMore={() => handlePopUp(popUpList[0])}
+            />
             <h2>Experience</h2>
-            <ExperienceCard {...experienceMock} />
-            <ExperienceCard {...experienceMock} />
-            <ExperienceCard {...experienceMock} />
+            <ExperienceCard
+              content={experienceList[1]}
+              onReadMore={() => handlePopUp(popUpList[1])}
+            />
+            <ExperienceCard
+              content={experienceList[2]}
+              onReadMore={() => handlePopUp(popUpList[2])}
+            />
+            <ExperienceCard
+              content={experienceList[3]}
+              onReadMore={() => handlePopUp(popUpList[3])}
+            />
           </div>
           <div className={styles.leadershipWrapper}>
             <h2>Leadership</h2>

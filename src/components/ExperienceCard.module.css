@@ -51,3 +51,11 @@
   margin-top: 5px;
   margin-bottom: 0px;
 }
+
+.readMore {
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Ubuntu Sans Mono";
+  color: #000;
+  text-decoration: none;
+}

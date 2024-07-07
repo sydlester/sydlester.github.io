@@ -45,7 +45,7 @@
 }
 
 .navElements li a {
-  border-image: url("../assets/UI/SmallButton-Blue2.png");
+  border-image: url("../assets/UI/SmallButton-Blue.png");
   border-image-slice: 49% fill;
   border-image-width: 140px;
   border-image-outset: 8px;
