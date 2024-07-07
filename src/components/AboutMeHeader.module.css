@@ -1,0 +1,84 @@
+.aboutMeHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.aboutMeTitle {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.aboutMeTitle h1 {
+  font-size: 24px;
+  font-family: pix;
+  font-weight: bolder;
+  text-shadow: none;
+  margin-right: 15px;
+}
+
+.gitIcon {
+  cursor: pointer;
+  border-image: url("../assets/UI/SquareButton-GitGreen.png");
+  border-image-slice: 49% fill;
+  border-image-width: 120px;
+  border-image-outset: 5px;
+
+  width: 24px;
+  height: 24px;
+  padding: 2px;
+  color: #000;
+  margin-right: 20px;
+  font-size: 24px;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkedInIcon {
+  cursor: pointer;
+  border-image: url("../assets/UI/SquareButton-Blue.png");
+  border-image-slice: 49% fill;
+  border-image-width: 120px;
+  border-image-outset: 5px;
+
+  width: 24px;
+  height: 24px;
+  color: #000;
+  margin-right: 20px;
+  padding: 2px;
+  font-size: 24px;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resumeBtn {
+  margin-right: 8px;
+}
+
+.resumeBtn a {
+  cursor: pointer;
+  border-image: url("../assets/UI/SmallButton-Yellow.png");
+  border-image-slice: 49% fill;
+  border-image-width: 140px;
+  border-image-outset: 8px;
+  font-family: pix;
+  font-size: 20px;
+  color: #000;
+  padding: 5px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.resumeBtn i {
+  font-size: 22px;
+  font-weight: light;
+  margin-right: 5px;
+}

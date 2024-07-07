@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Ubuntu+Sans+Mono&display=swap");
+@font-face {
+  font-family: pix;
+  src: url(../style/dogicapixel.ttf);
+}
+
+.experienceContainer {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  background-color: #dbeeff;
+  padding: 10px;
+  margin-bottom: 20px;
+
+  border-image: url("../assets/UI/Border-Blue.png");
+  border-image-slice: 49% fill;
+  border-image-width: 15px;
+  border-image-outset: 5px;
+}
+
+.dates {
+  float: right;
+  font-style: italic;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: pix;
+}
+.experienceImage {
+  width: 100%;
+}
+
+.experienceImage img {
+  width: 100%;
+}
+
+.experienceContent {
+  padding: 10px;
+}
+
+.experienceContent h3 {
+  font-size: 18;
+  font-family: pix;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: black;
+}
+
+.experienceContent p {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}

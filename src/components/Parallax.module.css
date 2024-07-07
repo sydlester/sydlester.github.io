@@ -1,0 +1,55 @@
+.container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.smallStar {
+  position: absolute;
+  background-image: url("../assets/parallax/SmallStar.png");
+  width: 35px;
+  height: 35px;
+  animation: flicker 2s infinite;
+}
+
+.largeStar {
+  position: absolute;
+  background-image: url("../assets/parallax/LargeStar.png");
+  width: 70px;
+  height: 70px;
+  animation: flicker 3s infinite;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.cloud1 {
+  position: absolute;
+  background-image: url("../assets/parallax/Cloud-1.png");
+  width: 200px;
+  height: 100px;
+}
+
+.cloud2 {
+  position: absolute;
+  background-image: url("../assets/parallax/Cloud-2.png");
+  width: 200px;
+  height: 100px;
+}
+
+.cloud3 {
+  position: absolute;
+  background-image: url("../assets/parallax/Cloud-3.png");
+  width: 200px;
+  height: 100px;
+}

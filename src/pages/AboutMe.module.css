@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Ubuntu+Sans+Mono&display=swap");
+@font-face {
+  font-family: pix;
+  src: url(../style/dogicapixel.ttf);
+}
+
+.wrapper {
+  max-width: 75%;
+  margin: 0 auto;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.wrapper p {
+  font-family: "Ubuntu Sans Mono", monospace;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.wrapper h1 {
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: pix;
+  margin-bottom: 10px;
+}
+
+.introContainer {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #000;
+  margin-bottom: 20px;
+  background-color: #dbeeff;
+  border-image: url("../assets/UI/Border-Blue.png");
+  border-image-slice: 49% fill;
+  border-image-width: 15px;
+  border-image-outset: 5px;
+  /* @apply grid md:flex gap-4; */
+}
+
+.profilePic {
+  /* @apply place-content-center; */
+  height: 100%;
+  width: 100%;
+}
+
+.aboutMeContent {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  /* @apply grid grid-cols-1 md:grid-cols-3 gap-4; */
+}
+
+.aboutMeContent h2 {
+  font-size: 18px;
+  font-family: pix;
+  font-weight: bolder;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.experienceWrapper {
+  padding-right: 5%;
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    min-height: 100%;
+  }
+  .aboutMeContent {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}

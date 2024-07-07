@@ -1,0 +1,37 @@
+.leadershipContainer {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  background-color: #fff;
+  margin-bottom: 18px;
+  border: 2px solid #000;
+
+  border-image: url("../assets/UI/Border-Blue.png");
+  border-image-slice: 49% fill;
+  border-image-width: 12px;
+  border-image-outset: 5px;
+}
+
+.leadershipImage {
+  width: 100%;
+}
+
+.leadershipImage img {
+  width: 100%;
+}
+
+.leadershipContent {
+  padding: 8px;
+}
+
+.leadershipContent h3 {
+  font-size: 16px;
+  font-family: pix;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: black;
+}
+
+.leadershipContent p {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
