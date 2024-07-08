@@ -12,7 +12,7 @@ const TextPopUp = ({ content, onClose }: TextPopUpProps) => {
       <div className={styles.container}>
         <div className={styles.title}>{content.title}</div>
         <div className={styles.close} onClick={onClose}>
-          x
+          <img src={require("../assets/UI/X-Button.png")} alt="close" />
         </div>
         <div className={styles.description}>{content.description}</div>
       </div>

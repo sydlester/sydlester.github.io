@@ -26,6 +26,9 @@
 }
 
 .introContainer {
+  max-width: 900px;
+  position: relative;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 25% 75%;
   padding-bottom: 15px;
@@ -43,6 +46,11 @@
   /* @apply place-content-center; */
   height: 100%;
   width: 100%;
+}
+
+.profilePic img {
+  width: 100%;
+  height: 100%;
 }
 
 .aboutMeContent {
@@ -70,8 +78,59 @@
     justify-content: center;
     min-height: 100%;
   }
+
+  .introContainer {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: none;
+  }
+
+  .profilePic {
+    max-height: 250px;
+    max-width: 250px;
+    height: 65vw;
+    width: 65vw;
+    margin-bottom: 15px;
+    border-image: url("../assets/UI/Border-Blue.png");
+    border-image-slice: 49% fill;
+    border-image-width: 15px;
+    border-image-outset: 5px;
+  }
+
+  .profilePic img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .introParagraph {
+    background-color: #dbeeff;
+    padding: 15px;
+    border-image: url("../assets/UI/Border-Blue.png");
+    border-image-slice: 49% fill;
+    border-image-width: 15px;
+    border-image-outset: 5px;
+  }
+
+  .introParagraph h1 {
+    font-size: 22px;
+    font-family: pix;
+    font-weight: bolder;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .aboutMeContent {
     display: grid;
     grid-template-columns: 100%;
+  }
+
+  .experienceWrapper {
+    padding-right: 0;
   }
 }

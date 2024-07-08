@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Ubuntu+Sans+Mono&display=swap");
+@font-face {
+  font-family: pix;
+  src: url(../style/dogicapixel.ttf);
+}
+
+.wrapper {
+  width: 75%;
+  max-width: 900px;
+  margin: 0 auto;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.wrapper p {
+  font-family: "Ubuntu Sans Mono", monospace;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.wrapper h1 {
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: pix;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    min-height: 100%;
+  }
+}

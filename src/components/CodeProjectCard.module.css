@@ -4,14 +4,12 @@
   src: url(../style/dogicapixel.ttf);
 }
 
-.experienceContainer {
+.projectContainer {
   display: grid;
   grid-template-columns: 20% 80%;
   background-color: #dbeeff;
   padding: 10px;
   margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 144, 0.5);
 
   border-image: url("../assets/UI/Border-Blue.png");
   border-image-slice: 49% fill;
@@ -29,19 +27,19 @@
   font-weight: bold;
   font-family: pix;
 }
-.experienceImage {
+.projectImage {
   width: 100%;
 }
 
-.experienceImage img {
+.projectImage img {
   width: 100%;
 }
 
-.experienceContent {
+.projectContent {
   padding: 10px;
 }
 
-.experienceContent h3 {
+.projectContent h3 {
   font-size: 18;
   font-family: pix;
   margin-top: 0px;
@@ -49,15 +47,31 @@
   color: black;
 }
 
-.experienceContent p {
+.projectContent p {
   margin-top: 5px;
   margin-bottom: 0px;
 }
 
-.readMore {
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.buttonContainer {
+  margin-top: 20px;
+  margin-left: 8px;
+}
+
+.buttonContainer a {
   cursor: pointer;
-  font-size: 16px;
-  font-family: "Ubuntu Sans Mono";
+  border-image: url("../assets/UI/SmallButton-GitGreen.png");
+  border-image-slice: 49% fill;
+  border-image-width: 140px;
+  border-image-outset: 8px;
+  font-family: pix;
+  font-size: 20px;
   color: #000;
+  padding: 5px;
   text-decoration: none;
 }

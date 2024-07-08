@@ -55,3 +55,31 @@ export const popUpList: PopUpList[] = [
     description: "Longer Description",
   },
 ];
+
+export interface ProjectList {
+  title: string;
+  description: string;
+  imgUrl: string;
+  date: string;
+  tags: string[];
+  gitUrl: string;
+}
+
+export const codeProjectList: ProjectList[] = [
+  {
+    title: "STARIFY",
+    description: "Some description",
+    imgUrl: URL_LIST.noImage,
+    date: "2023",
+    tags: ["react", "typescript", "css"],
+    gitUrl: "",
+  },
+  {
+    title: "ECOMMERCE MARKETPLACE",
+    description: "Some description",
+    imgUrl: URL_LIST.noImage,
+    date: "2022",
+    tags: ["react", "typescript", "css"],
+    gitUrl: "",
+  },
+];
