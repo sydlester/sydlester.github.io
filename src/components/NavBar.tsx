@@ -3,10 +3,10 @@ import { useState } from "react";
 import styles from "./NavBar.module.css";
 
 const MenuIcon = () => {
-  return <div>h</div>;
+  return <img src={require("../assets/UI/Hamburger.png")} alt=""></img>;
 };
 const CloseMenu = () => {
-  return <div>x</div>;
+  return <img src={require("../assets/UI/X.png")} alt=""></img>;
 };
 
 export const NavBar = () => {

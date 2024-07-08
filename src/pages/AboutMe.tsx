@@ -1,11 +1,14 @@
 import { ExperienceCard } from "../components/ExperienceCard";
-import {
-  LeadershipCard,
-  mockProps as leadershipMock,
-} from "../components/LeadershipCard";
+import { LeadershipCard } from "../components/LeadershipCard";
 import { AboutMeHeader } from "../components/AboutMeHeader";
 import styles from "./AboutMe.module.css";
-import { PopUpList, URL_LIST, experienceList, popUpList } from "../const";
+import {
+  PopUpList,
+  URL_LIST,
+  experienceList,
+  leadershipList,
+  popUpList,
+} from "../const";
 import TextPopUp from "../components/TextPopUp";
 import { useState } from "react";
 
@@ -84,10 +87,13 @@ export default function AboutMe() {
           </div>
           <div className={styles.leadershipWrapper}>
             <h2>Leadership</h2>
-            <LeadershipCard {...leadershipMock} />
-            <LeadershipCard {...leadershipMock} />
-            <LeadershipCard {...leadershipMock} />
-            <LeadershipCard {...leadershipMock} />
+            <LeadershipCard
+              content={leadershipList[0]}
+              onReadMore={() => handlePopUp(popUpList[4])}
+            />
+            <LeadershipCard content={leadershipList[1]} />
+            <LeadershipCard content={leadershipList[2]} />
+            <LeadershipCard content={leadershipList[3]} />
           </div>
         </div>
       </div>

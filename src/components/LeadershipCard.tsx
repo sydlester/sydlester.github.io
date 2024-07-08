@@ -1,49 +1,38 @@
 import { Component } from "react";
 import styles from "./LeadershipCard.module.css";
-import { URL_LIST } from "../const";
+import { LeadershipList } from "../const";
 
-export type LeadershipCardProps = typeof LeadershipCard.defaultProps & {
-  title: string;
-  description: string;
-  imgUrl: string;
-  organizationUrl: string;
-};
+interface LeadershipCardProps {
+  content: LeadershipList;
+  onReadMore?: () => void;
+}
 
 export class LeadershipCard extends Component<LeadershipCardProps> {
-  static defaultProps = {
-    imgUrl: URL_LIST.noImage,
-  };
-
   render() {
     return (
       <div className={styles.leadershipContainer}>
         <div className={styles.leadershipImage}>
-          <img src={this.props.imgUrl} alt={this.props.title} />
+          <img src={this.props.content.imgUrl} alt={this.props.content.title} />
         </div>
         <div className={styles.leadershipContent}>
           <h3>
             {" "}
             <a
-              href={this.props.organizationUrl}
+              href={this.props.content.organizationUrl}
               target="_blank"
               rel="noreferrer"
             >
-              {this.props.title}
+              {this.props.content.title}
             </a>
           </h3>
-          <p>{this.props.description}</p>
+          <p>{this.props.content.description}</p>
+          {this.props.onReadMore && (
+            <div className={styles.readMore} onClick={this.props.onReadMore}>
+              read more...
+            </div>
+          )}
         </div>
       </div>
     );
   }
 }
-
-export const mockProps = {
-  ...LeadershipCard.defaultProps,
-  ...({
-    title: "Organization Title",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus, eros at efficitur tempor",
-    organizationUrl: "https://www.google.com",
-  } as LeadershipCardProps),
-};

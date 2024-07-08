@@ -33,6 +33,39 @@ export const experienceList: ExperienceList[] = [
   },
 ];
 
+export interface LeadershipList {
+  title: string;
+  description: string;
+  imgUrl: string;
+  organizationUrl: string;
+}
+export const leadershipList: LeadershipList[] = [
+  {
+    title: "Duke Ski & Board",
+    description: "Some description",
+    imgUrl: URL_LIST.noImage,
+    organizationUrl: "https://www.google.com",
+  },
+  {
+    title: "Duke Chronicle",
+    description: "Some description",
+    imgUrl: URL_LIST.noImage,
+    organizationUrl: "https://www.google.com",
+  },
+  {
+    title: "DTech",
+    description: "Some description",
+    imgUrl: URL_LIST.noImage,
+    organizationUrl: "https://www.google.com",
+  },
+  {
+    title: "WXDU Campus Radio",
+    description: "Some description",
+    imgUrl: URL_LIST.noImage,
+    organizationUrl: "https://www.google.com",
+  },
+];
+
 export interface PopUpList {
   title: string;
   description: string;
@@ -52,6 +85,10 @@ export const popUpList: PopUpList[] = [
   },
   {
     title: "Research Intern",
+    description: "Longer Description",
+  },
+  {
+    title: "Duke Ski & Board",
     description: "Longer Description",
   },
 ];

@@ -1,9 +1,9 @@
 .leadershipContainer {
   display: grid;
   grid-template-columns: 20% 80%;
-  background-color: #fff;
+  background-color: #dbeeff;
   margin-bottom: 18px;
-  border: 2px solid #000;
+  box-shadow: 5px 5px 10px rgba(0, 0, 144, 0.5);
 
   border-image: url("../assets/UI/Border-Blue.png");
   border-image-slice: 49% fill;
@@ -34,4 +34,12 @@
 .leadershipContent p {
   margin-top: 5px;
   margin-bottom: 0px;
+}
+
+.readMore {
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Ubuntu Sans Mono";
+  color: #000;
+  text-decoration: none;
 }
