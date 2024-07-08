@@ -1,7 +1,7 @@
 .container {
   position: fixed;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   z-index: -1;
 }
@@ -17,8 +17,8 @@
 .largeStar {
   position: absolute;
   background-image: url("../assets/parallax/LargeStar.png");
-  width: 70px;
-  height: 70px;
+  width: 45px;
+  height: 45px;
   animation: flicker 3s infinite;
 }
 
@@ -34,23 +34,56 @@
   }
 }
 
+@keyframes animateCloud {
+  0% {
+    left: -700px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.wrapClouds {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 .cloud1 {
   position: absolute;
-  background-image: url("../assets/parallax/Cloud-1.png");
-  width: 200px;
-  height: 100px;
+  top: 10%;
+  width: 500px;
+  height: 200px;
+  opacity: 0.6;
+  animation: animateCloud 120s linear infinite;
+  animation-delay: -40s;
 }
 
 .cloud2 {
   position: absolute;
-  background-image: url("../assets/parallax/Cloud-2.png");
-  width: 200px;
-  height: 100px;
+  top: 40%;
+  width: 700px;
+  height: 270px;
+  opacity: 0.6;
+  animation: animateCloud 140s linear infinite;
+  animation-delay: -15s;
 }
 
 .cloud3 {
   position: absolute;
-  background-image: url("../assets/parallax/Cloud-3.png");
-  width: 200px;
-  height: 100px;
+  top: 80%;
+  width: 400px;
+  height: 150px;
+  opacity: 0.6;
+  animation: animateCloud 110s linear infinite;
+  animation-delay: -80s;
+}
+
+.cloud1 img,
+.cloud2 img,
+.cloud3 img {
+  width: 100%;
+  height: 100%;
 }

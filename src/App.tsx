@@ -9,11 +9,11 @@ import Code from "./pages/Code";
 function App() {
   return (
     <div className="wrapper">
+      <Parallax />
       <HashRouter>
         <div>
           <NavBar />
         </div>
-        <Parallax />
         <div>
           <Routes>
             <Route path="/" element={<AboutMe />} />
