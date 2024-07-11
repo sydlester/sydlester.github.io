@@ -14,7 +14,7 @@ export class CodeProjectCard extends Component<ProjectList> {
           <span className={styles.dates}>{this.props.date}</span>
           <div className={styles.tags}>
             {this.props.tags.map((tag) => (
-              <span className={styles.tag}>{tag}</span>
+              <div className={styles.tag}>{tag.toUpperCase()}</div>
             ))}
           </div>
           <p>{this.props.description}</p>

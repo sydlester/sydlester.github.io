@@ -105,18 +105,20 @@ export interface ProjectList {
 export const codeProjectList: ProjectList[] = [
   {
     title: "STARIFY",
-    description: "Some description",
+    description:
+      "A web client application that aggregates a user’s Spotify listening data from several time periods and presents a visualization in a retro arcade game UX. Integrates Spotify's OAuth services and several data-plane APIs. All logos and icons featured in the app were hand-drawn by me!",
     imgUrl: URL_LIST.noImage,
     date: "2023",
-    tags: ["react", "typescript", "css"],
-    gitUrl: "",
+    tags: ["react", "node.js", "javascript", "html/css", "oauth"],
+    gitUrl: "https://github.com/sydlester/starify-app",
   },
   {
     title: "ECOMMERCE MARKETPLACE",
-    description: "Some description",
+    description:
+      "A full-featured eCommerce site with products search, shopping cart, and purchase functions for buyer accounts, as well as inventory control, a product catalogue, and shipping management capabilities for sellers. This was my first experience building a full-stack, multi-tier application. We simulated the full software development life cycle (SDLC) from design to release, including site reliability engineering and DevOps.",
     imgUrl: URL_LIST.noImage,
     date: "2022",
-    tags: ["react", "typescript", "css"],
-    gitUrl: "",
+    tags: ["python", "flask", "sql", "html/css"],
+    gitUrl: "https://github.com/sydlester/mini-amazon-cs316",
   },
 ];

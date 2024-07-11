@@ -34,18 +34,9 @@
   align-items: center;
   margin-bottom: 10px;
   filter: drop-shadow(-5px 5px 5px #0000001f);
-  max-width: 450px;
+  max-width: 325px;
 }
 
 .header img {
   width: 100%;
-}
-
-@media (max-width: 800px) {
-  .wrapper {
-    max-width: 80%;
-    margin: 0 auto;
-    justify-content: center;
-    min-height: 100%;
-  }
 }

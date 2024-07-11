@@ -7,7 +7,21 @@ export class AboutMeHeader extends Component {
     return (
       <div className={styles.aboutMeHeader}>
         <div className={styles.aboutMeTitle}>
-          <h1>ABOUT ME</h1>
+          <img
+            src={require("../assets/headers/AboutMe.png")}
+            alt="about me"
+          ></img>
+        </div>
+        <div className={styles.buttons}>
+          <a
+            className={styles.resumeBtn}
+            href={URL_LIST.resume}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fa fa-arrow-down" aria-hidden="true"></i>
+            RESUME
+          </a>
           <a
             href={URL_LIST.github}
             className={styles.gitIcon}
@@ -23,12 +37,6 @@ export class AboutMeHeader extends Component {
             rel="noreferrer"
           >
             <i className="fa fa-linkedin"></i>
-          </a>
-        </div>
-        <div className={styles.resumeBtn}>
-          <a href={URL_LIST.resume} target="_blank" rel="noreferrer">
-            <i className="fa fa-arrow-down" aria-hidden="true"></i>
-            RESUME
           </a>
         </div>
       </div>

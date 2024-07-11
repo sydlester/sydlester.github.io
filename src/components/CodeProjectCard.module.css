@@ -67,7 +67,16 @@
 .tag {
   padding: 4px;
   margin-right: 15px;
-  border-image: url("../assets/tags/BlueTag.png");
+  border-image: url("../assets/tags/Tag-Blue.png");
+  border-image-slice: 49% fill;
+  border-image-width: 140px;
+  border-image-outset: 8px;
+}
+
+.react {
+  padding: 4px;
+  margin-right: 15px;
+  border-image: url("../assets/tags/Tag-Orange.png");
   border-image-slice: 49% fill;
   border-image-width: 140px;
   border-image-outset: 8px;
@@ -75,18 +84,19 @@
 
 .buttonContainer {
   margin-top: 20px;
-  margin-left: 8px;
+  margin-left: 3px;
 }
 
 .buttonContainer a {
   cursor: pointer;
-  border-image: url("../assets/UI/SmallButton-GitGreen.png");
+  border-image: url("../assets/UI/SquareButton-Pink.png");
   border-image-slice: 49% fill;
-  border-image-width: 140px;
-  border-image-outset: 8px;
+  border-image-width: 120px;
+  border-image-outset: 5px;
   font-family: pix;
-  font-size: 20px;
+  font-size: 18px;
   color: #000;
   padding: 5px;
+  font-weight: bold;
   text-decoration: none;
 }
