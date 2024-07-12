@@ -2,19 +2,26 @@ import { Component } from "react";
 import { CreativeProjectList } from "../const";
 import styles from "./CreativeProjectCard.module.css";
 
-export class CreativeProjectCard extends Component<CreativeProjectList> {
+interface CreativeProjectCardProps {
+  content: CreativeProjectList;
+  onSeeMore?: () => void;
+}
+
+export class CreativeProjectCard extends Component<CreativeProjectCardProps> {
   render() {
     return (
       <div className={styles.projectContainer}>
         <div className={styles.projectImage}>
-          <img src={this.props.imgUrl} alt={this.props.title} />
+          <img src={this.props.content.imgUrl} alt={this.props.content.title} />
         </div>
         <div className={styles.projectContent}>
-          <span className={styles.title}>{this.props.title}</span>
-          <p>{this.props.description}</p>
-          <div className={styles.buttonContainer}>
-            <a href={this.props.redirectUrl}>See more</a>
-          </div>
+          <span className={styles.title}>{this.props.content.title}</span>
+          <p>{this.props.content.description}</p>
+          {this.props.onSeeMore && (
+            <div className={styles.seeMore} onClick={this.props.onSeeMore}>
+              see more...
+            </div>
+          )}
         </div>
       </div>
     );

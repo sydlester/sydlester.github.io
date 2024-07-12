@@ -123,6 +123,30 @@ export const codeProjectList: ProjectList[] = [
   },
 ];
 
+export interface ImgPopUpList {
+  img: string;
+  text: string;
+}
+
+export const imgPopUpList: ImgPopUpList[] = [
+  {
+    img: URL_LIST.noImage,
+    text: "picture 1",
+  },
+  {
+    img: URL_LIST.noImage,
+    text: "picture 2",
+  },
+  {
+    img: URL_LIST.noImage,
+    text: "picture 3",
+  },
+  {
+    img: URL_LIST.noImage,
+    text: "picture 4",
+  },
+];
+
 export interface CreativeProjectList {
   title: string;
   description: string;
