@@ -1,6 +1,5 @@
 import { ExperienceCard } from "../components/ExperienceCard";
 import { LeadershipCard } from "../components/LeadershipCard";
-import { AboutMeHeader } from "../components/AboutMeHeader";
 import styles from "./AboutMe.module.css";
 import {
   PopUpList,
@@ -63,15 +62,53 @@ export default function AboutMe() {
         <TextPopUp content={popUpProps} onClose={handleShowPopUp} />
       )}
       <div className={styles.aboutMeContainer}>
-        <AboutMeHeader />
+        <div className={styles.aboutMeHeader}>
+          <div className={styles.aboutMeTitle}>
+            <img
+              src={require("../assets/headers/AboutMe.png")}
+              alt="about me"
+            ></img>
+          </div>
+          <div className={styles.buttons}>
+            <a
+              className={styles.resumeBtn}
+              href={URL_LIST.resume}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fa fa-arrow-down" aria-hidden="true"></i>
+              RESUME
+            </a>
+            <a
+              href={URL_LIST.github}
+              className={styles.gitIcon}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fa fa-github"></i>
+            </a>
+            <a
+              href={URL_LIST.linkedIn}
+              className={styles.linkedInIcon}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fa fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
         <div className={styles.aboutMeContent}>
           <div className={styles.experienceWrapper}>
-            <h2>Academic</h2>
+            <div className={styles.aboutMeSubtitle} style={{ width: "130px" }}>
+              Academic
+            </div>
             <ExperienceCard
               content={experienceList[0]}
               onReadMore={() => handlePopUp(popUpList[0])}
             />
-            <h2>Experience</h2>
+            <div className={styles.aboutMeSubtitle} style={{ width: "150px" }}>
+              Experience
+            </div>
             <ExperienceCard
               content={experienceList[1]}
               onReadMore={() => handlePopUp(popUpList[1])}
@@ -86,7 +123,9 @@ export default function AboutMe() {
             />
           </div>
           <div className={styles.leadershipWrapper}>
-            <h2>Leadership</h2>
+            <div className={styles.aboutMeSubtitle} style={{ width: "150px" }}>
+              Leadership
+            </div>
             <LeadershipCard
               content={leadershipList[0]}
               onReadMore={() => handlePopUp(popUpList[4])}

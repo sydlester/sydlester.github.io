@@ -1,4 +1,6 @@
 import styles from "./Adventure.module.css";
+import { adventureList } from "../const";
+import { AdventureCard } from "../components/AdventureCard";
 
 export default function Adventure() {
   return (
@@ -9,6 +11,9 @@ export default function Adventure() {
           alt="adventure"
         ></img>
       </div>
+      <AdventureCard {...adventureList[0]} />
+      <AdventureCard {...adventureList[1]} />
+      <AdventureCard {...adventureList[2]} />
     </div>
   );
 }

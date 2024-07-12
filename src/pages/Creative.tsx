@@ -1,4 +1,6 @@
 import styles from "./Creative.module.css";
+import { creativeProjectList } from "../const";
+import { CreativeProjectCard } from "../components/CreativeProjectCard";
 
 export default function Creative() {
   return (
@@ -9,6 +11,9 @@ export default function Creative() {
           alt="creative"
         ></img>
       </div>
+      <CreativeProjectCard {...creativeProjectList[0]} />
+      <CreativeProjectCard {...creativeProjectList[1]} />
+      <CreativeProjectCard {...creativeProjectList[2]} />
     </div>
   );
 }
