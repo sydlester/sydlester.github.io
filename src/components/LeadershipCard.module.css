@@ -1,6 +1,6 @@
 .leadershipContainer {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 100px 1fr;
   background-color: #dbeeff;
   margin-bottom: 18px;
   box-shadow: 5px 5px 10px rgba(0, 0, 144, 0.5);
@@ -11,8 +11,22 @@
   border-image-outset: 5px;
 }
 
+.imageContainer {
+  margin: 10px;
+  width: 90px;
+  height: 90px;
+  border-image: url("../assets/icons/IconContainer.png");
+  border-image-slice: 49% fill;
+  border-image-width: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .leadershipImage {
-  width: 100%;
+  width: 70px;
+  height: 70px;
+  filter: drop-shadow(-3px 3px 2px rgba(0, 0, 100, 0.3));
 }
 
 .leadershipImage img {

@@ -8,11 +8,14 @@ interface LeadershipCardProps {
 }
 
 export class LeadershipCard extends Component<LeadershipCardProps> {
+  img = require(`../${this.props.content.imgUrl}`);
   render() {
     return (
       <div className={styles.leadershipContainer}>
-        <div className={styles.leadershipImage}>
-          <img src={this.props.content.imgUrl} alt={this.props.content.title} />
+        <div className={styles.imageContainer}>
+          <div className={styles.leadershipImage}>
+            <img src={this.img} alt={this.props.content.title} />
+          </div>
         </div>
         <div className={styles.leadershipContent}>
           <h3>

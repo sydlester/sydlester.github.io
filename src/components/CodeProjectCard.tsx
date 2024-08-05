@@ -25,12 +25,14 @@ export class CodeProjectCard extends Component<ProjectList> {
       </div>
     );
   };
-
+  img = require(`../${this.props.imgUrl}`);
   render() {
     return (
       <div className={styles.projectContainer}>
-        <div className={styles.projectImage}>
-          <img src={this.props.imgUrl} alt={this.props.title} />
+        <div className={styles.imageContainer}>
+          <div className={styles.projectImage}>
+            <img src={this.img} alt={this.props.title} />
+          </div>
         </div>
         <div className={styles.projectContent}>
           <span className={styles.title}>{this.props.title}</span>

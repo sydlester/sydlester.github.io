@@ -167,7 +167,11 @@
 }
 
 .experienceWrapper {
-  padding-right: 5%;
+  margin-right: 5%;
+}
+
+.leadershipWrapper {
+  width: 100%;
 }
 
 @media (max-width: 800px) {
@@ -230,6 +234,7 @@
   }
 
   .experienceWrapper {
-    padding-right: 0;
+    margin-right: 0;
+    width: 100%;
   }
 }

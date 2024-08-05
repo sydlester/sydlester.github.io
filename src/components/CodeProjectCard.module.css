@@ -6,9 +6,9 @@
 
 .projectContainer {
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 180px 1fr;
   background-color: #dbeeff;
-  padding: 10px;
+  padding: 2px;
   margin-bottom: 20px;
 
   border-image: url("../assets/UI/Border-Blue.png");
@@ -27,8 +27,23 @@
   font-weight: bold;
   font-family: pix;
 }
+
+.imageContainer {
+  margin: 10px;
+  width: 160px;
+  height: 160px;
+  border-image: url("../assets/icons/IconContainer.png");
+  border-image-slice: 49% fill;
+  border-image-width: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .projectImage {
-  width: 100%;
+  width: 140px;
+  height: 140px;
+  filter: drop-shadow(-4px 4px 3px rgba(0, 0, 100, 0.3));
 }
 
 .projectImage img {
@@ -36,7 +51,9 @@
 }
 
 .projectContent {
-  padding: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-top: 10px;
 }
 
 .projectContent h3 {
