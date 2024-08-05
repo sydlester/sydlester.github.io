@@ -1,6 +1,6 @@
 import styles from "./Code.module.css";
 import { CodeProjectCard } from "../components/CodeProjectCard";
-import { codeProjectList } from "../const";
+import { codeProjectList } from "../data/codeData";
 
 export default function Code() {
   return (

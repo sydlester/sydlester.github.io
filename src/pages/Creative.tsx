@@ -1,5 +1,6 @@
 import styles from "./Creative.module.css";
-import { creativeProjectList, ImgPopUpList, imgPopUpList } from "../const";
+import { ImgPopUpList, imgPopUpList } from "../const";
+import { creativeProjectList } from "../data/creativeData";
 import { useState } from "react";
 import { CreativeProjectCard } from "../components/CreativeProjectCard";
 import ImagePopUp from "../components/ImagePopUp";

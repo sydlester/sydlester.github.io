@@ -1,5 +1,5 @@
 import styles from "./TextPopUp.module.css";
-import { PopUpList } from "../const";
+import { PopUpList } from "../data/aboutMeData";
 
 interface TextPopUpProps {
   content: PopUpList;

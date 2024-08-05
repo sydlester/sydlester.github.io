@@ -1,5 +1,5 @@
 import styles from "./Adventure.module.css";
-import { adventureList } from "../const";
+import { adventureList } from "../data/adventureData";
 import { AdventureCard } from "../components/AdventureCard";
 
 export default function Adventure() {

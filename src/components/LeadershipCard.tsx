@@ -1,6 +1,6 @@
 import { Component } from "react";
 import styles from "./LeadershipCard.module.css";
-import { LeadershipList } from "../const";
+import { LeadershipList } from "../data/aboutMeData";
 
 interface LeadershipCardProps {
   content: LeadershipList;

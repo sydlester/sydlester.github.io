@@ -1,23 +1,24 @@
 .leadershipContainer {
   display: grid;
   grid-template-columns: 100px 1fr;
-  background-color: #dbeeff;
+  background-color: #cfeffc;
   margin-bottom: 18px;
   box-shadow: 5px 5px 10px rgba(0, 0, 144, 0.5);
 
-  border-image: url("../assets/UI/Border-Blue.png");
+  border-image: url("../assets/UI/NewBlueBorder.png");
   border-image-slice: 49% fill;
   border-image-width: 12px;
   border-image-outset: 5px;
 }
 
 .imageContainer {
-  margin: 10px;
+  margin: 12px;
   width: 90px;
   height: 90px;
-  border-image: url("../assets/icons/IconContainer.png");
+  border-image: url("../assets/icons/IconContainer2.png");
   border-image-slice: 49% fill;
-  border-image-width: 10px;
+  border-image-width: 12px;
+  border-image-outset: 2px;
   display: flex;
   justify-content: center;
   align-items: center;

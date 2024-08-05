@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { AdventureList } from "../const";
+import { AdventureList } from "../data/adventureData";
 import styles from "./CreativeProjectCard.module.css";
 
 export class AdventureCard extends Component<AdventureList> {

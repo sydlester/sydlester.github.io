@@ -1,6 +1,7 @@
 import { Component } from "react";
-import { ProjectList } from "../const";
+import { ProjectList } from "../data/codeData";
 import styles from "./CodeProjectCard.module.css";
+import { FaGithub } from "react-icons/fa";
 
 export class CodeProjectCard extends Component<ProjectList> {
   spotifyTagList = () => {
@@ -42,7 +43,13 @@ export class CodeProjectCard extends Component<ProjectList> {
             this.ecommerceTagList()}
           <p>{this.props.description}</p>
           <div className={styles.buttonContainer}>
-            <a href={this.props.gitUrl}>GITHUB REPO</a>
+            <div
+              className={styles.button}
+              role="button"
+              onClick={() => window.open(this.props.gitUrl)}
+            >
+              <FaGithub /> GITHUB REPO
+            </div>
           </div>
         </div>
       </div>

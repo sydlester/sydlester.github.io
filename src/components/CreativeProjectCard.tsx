@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { CreativeProjectList } from "../const";
+import { CreativeProjectList } from "../data/creativeData";
 import styles from "./CreativeProjectCard.module.css";
 
 interface CreativeProjectCardProps {

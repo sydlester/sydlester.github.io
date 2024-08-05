@@ -7,11 +7,11 @@
 .projectContainer {
   display: grid;
   grid-template-columns: 180px 1fr;
-  background-color: #dbeeff;
+  background-color: #cfeffc;
   padding: 2px;
   margin-bottom: 20px;
 
-  border-image: url("../assets/UI/Border-Blue.png");
+  border-image: url("../assets/UI/NewBlueBorder.png");
   border-image-slice: 49% fill;
   border-image-width: 15px;
   border-image-outset: 5px;
@@ -30,11 +30,11 @@
 
 .imageContainer {
   margin: 10px;
-  width: 160px;
-  height: 160px;
-  border-image: url("../assets/icons/IconContainer.png");
+  width: 165px;
+  height: 165px;
+  border-image: url("../assets/icons/IconContainer2.png");
   border-image-slice: 49% fill;
-  border-image-width: 10px;
+  border-image-width: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +43,7 @@
 .projectImage {
   width: 140px;
   height: 140px;
-  filter: drop-shadow(-4px 4px 3px rgba(0, 0, 100, 0.3));
+  filter: drop-shadow(-4px 4px 4px #06496070);
 }
 
 .projectImage img {
@@ -51,6 +51,7 @@
 }
 
 .projectContent {
+  padding-left: 5px;
   padding-right: 10px;
   padding-bottom: 20px;
   padding-top: 10px;
@@ -162,20 +163,29 @@
 }
 
 .buttonContainer {
-  margin-top: 20px;
-  margin-left: 3px;
+  margin-top: 10px;
+  margin-left: 5px;
+  width: 175px;
 }
 
-.buttonContainer a {
+.button {
   cursor: pointer;
   border-image: url("../assets/UI/SquareButton-Pink.png");
-  border-image-slice: 49% fill;
-  border-image-width: 120px;
+  border-image-slice: 40% fill;
+  border-image-width: 12px;
   border-image-outset: 5px;
   font-family: pix;
-  font-size: 18px;
+  font-size: 16px;
   color: #000;
   padding: 5px;
   font-weight: bold;
   text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button:hover {
+  transform: scale(0.98);
 }

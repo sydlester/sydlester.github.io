@@ -1,6 +1,6 @@
 import { Component } from "react";
 import styles from "./ExperienceCard.module.css";
-import { ExperienceList } from "../const";
+import { ExperienceList } from "../data/aboutMeData";
 
 export interface ExperienceCardProps {
   content: ExperienceList;

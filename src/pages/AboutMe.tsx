@@ -1,13 +1,15 @@
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { MdOutlineFileDownload } from "react-icons/md";
 import { ExperienceCard } from "../components/ExperienceCard";
 import { LeadershipCard } from "../components/LeadershipCard";
 import styles from "./AboutMe.module.css";
+import { URL_LIST } from "../const";
 import {
-  PopUpList,
-  URL_LIST,
   experienceList,
   leadershipList,
+  PopUpList,
   popUpList,
-} from "../const";
+} from "../data/aboutMeData";
 import TextPopUp from "../components/TextPopUp";
 import { useState } from "react";
 
@@ -19,6 +21,33 @@ const Intro = () => {
       </div>
       <div className={styles.introParagraph}>
         <h1>HI! MY NAME IS SYDNEY.</h1>
+        <div className={styles.buttons}>
+          <a
+            className={styles.resumeBtn}
+            href={URL_LIST.resume}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <MdOutlineFileDownload style={{ fontSize: "20px" }} />
+            RESUME
+          </a>
+          <a
+            href={URL_LIST.github}
+            className={styles.gitIcon}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href={URL_LIST.linkedIn}
+            className={styles.linkedInIcon}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaLinkedinIn />
+          </a>
+        </div>
         <div>
           <p>
             I am a senior at Duke University majoring in computer science, and
@@ -68,33 +97,6 @@ export default function AboutMe() {
               src={require("../assets/headers/AboutMe.png")}
               alt="about me"
             ></img>
-          </div>
-          <div className={styles.buttons}>
-            <a
-              className={styles.resumeBtn}
-              href={URL_LIST.resume}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="fa fa-arrow-down" aria-hidden="true"></i>
-              RESUME
-            </a>
-            <a
-              href={URL_LIST.github}
-              className={styles.gitIcon}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="fa fa-github"></i>
-            </a>
-            <a
-              href={URL_LIST.linkedIn}
-              className={styles.linkedInIcon}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="fa fa-linkedin"></i>
-            </a>
           </div>
         </div>
         <div className={styles.aboutMeContent}>
