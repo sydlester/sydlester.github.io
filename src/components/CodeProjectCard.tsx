@@ -35,13 +35,14 @@ export class CodeProjectCard extends Component<ProjectList> {
             <img src={this.img} alt={this.props.title} />
           </div>
         </div>
-        <div className={styles.projectContent}>
+        <div className={styles.titleTagsContainer}>
           <span className={styles.title}>{this.props.title}</span>
-          {/* <span className={styles.dates}>{this.props.date}</span> */}
           {this.props.title === "STARIFY" && this.spotifyTagList()}
           {this.props.title === "ECOMMERCE MARKETPLACE" &&
             this.ecommerceTagList()}
-          <p>{this.props.description}</p>
+        </div>
+        <div className={styles.descriptionButtonContainer}>
+          <p className={styles.description}>{this.props.description}</p>
           <div className={styles.buttonContainer}>
             <div
               className={styles.button}
