@@ -19,11 +19,13 @@ export class ExperienceCard extends Component<ExperienceCardProps> {
         </div>
         <div className={styles.experienceContent}>
           <span className={styles.title}>{this.props.content.title}</span>
-          {/* <span className={styles.dates}>2020-2024</span> */}
-          <p>{this.props.content.description}</p>
-          <div className={styles.readMore} onClick={this.props.onReadMore}>
-            read more...
-          </div>
+          <div className={styles.subtitle}>{this.props.content.subtitle}</div>
+          <span className={styles.description}>
+            {this.props.content.description}
+          </span>
+          <span className={styles.readMore} onClick={this.props.onReadMore}>
+            ...read more
+          </span>
         </div>
       </div>
     );

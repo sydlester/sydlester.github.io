@@ -5,6 +5,7 @@ export const URL_LIST = {
   linkedIn: "https://linkedin.com/in/sydneylester31",
   starify: "https://github.com/sydlester/starify-app",
   miniAmazon: "https://github.com/sydlester/mini-amazon-cs316",
+  test: "https://github.com/sydlester/",
 };
 
 export const ICON_LIST = {
@@ -17,8 +18,11 @@ export const ICON_LIST = {
   chronicle: "assets/icons/CameraIcon.png",
   dtech: "assets/icons/TerminalIcon.png",
   wxdu: "assets/icons/CDIcon.png",
-  starify: "assets/icons/SpaceIcon.png",
+  starify: "assets/icons/Space2Icon.png",
   miniAmazon: "assets/icons/ShoppingCartIcon.png",
+  wxdu2: "assets/icons/HeadphonesIcon.png",
+  art: "assets/icons/PaintIcon.png",
+  chronicle2: "assets/icons/Camera2Icon.png",
 };
 
 export interface ImgPopUpList {

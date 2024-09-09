@@ -15,6 +15,10 @@ const TextPopUp = ({ content, onClose }: TextPopUpProps) => {
         </div>
         <div className={styles.innerContainer}>
           <div className={styles.title}>{content.title}</div>
+          <div className={styles.subtitle}>{content.subtitle}</div>
+          {content.subtitle2 && (
+            <div className={styles.subtitle}>{content.subtitle2}</div>
+          )}
           <div className={styles.description}>{content.description}</div>
         </div>
       </div>

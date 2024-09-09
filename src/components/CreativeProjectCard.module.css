@@ -6,7 +6,8 @@
 
 .projectContainer {
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 180px 1fr;
+  grid-template-rows: auto auto;
   background-color: #dbeeff;
   padding: 10px;
   margin-bottom: 20px;
@@ -17,9 +18,12 @@
   border-image-outset: 5px;
 }
 
-.dates {
-  float: right;
-  font-style: italic;
+.titleContainer {
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
@@ -27,27 +31,116 @@
   font-weight: bold;
   font-family: pix;
 }
+
+.subtitle {
+  margin-left: 3px;
+  font-family: "Ubuntu Sans Mono";
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.imageContainer {
+  grid-row: 1 / span 2;
+  margin: 10px;
+  width: 165px;
+  height: 165px;
+  border-image: url("../assets/icons/IconContainer2.png");
+  border-image-slice: 40% fill;
+  border-image-width: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .projectImage {
-  width: 100%;
+  width: 140px;
+  height: 140px;
+  filter: drop-shadow(-4px 4px 4px #06496070);
 }
 
 .projectImage img {
   width: 100%;
 }
 
-.projectContent {
-  padding: 10px;
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 2px;
+  margin-bottom: 15px;
+  margin-right: 8px;
+  margin-left: 5px;
 }
 
-.projectContent h3 {
-  font-size: 18;
-  font-family: pix;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  color: black;
-}
-
-.projectContent p {
+.description {
   margin-top: 5px;
   margin-bottom: 0px;
+  margin-left: 3px;
+}
+
+.buttonContainer {
+  margin-top: 10px;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.button {
+  cursor: pointer;
+  border-image: url("../assets/UI/SquareButton-Pink.png");
+  border-image-slice: 40% fill;
+  border-image-width: 12px;
+  border-image-outset: 5px;
+  font-family: pix;
+  font-size: 16px;
+  color: #000;
+  padding: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 700) {
+  .projectContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .titleContainer {
+    grid-row: 1;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+
+  .imageContainer {
+    grid-row: 1;
+    margin-bottom: 2px;
+    width: 100px;
+    height: 100px;
+    border-image-width: 10px;
+  }
+
+  .projectImage {
+    width: 80px;
+    height: 80px;
+  }
+
+  .descriptionContainer {
+    grid-column: 1 / span 2;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .buttonContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
 }

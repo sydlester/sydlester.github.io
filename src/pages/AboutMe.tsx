@@ -72,6 +72,7 @@ export default function AboutMe() {
   const [showPopUp, setShowPopUp] = useState(false);
   const [popUpProps, setPopUpProps] = useState<PopUpList>({
     title: "",
+    subtitle: "",
     description: "",
   });
 
