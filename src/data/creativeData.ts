@@ -13,7 +13,8 @@ export const creativeProjectList: CreativeProjectList[] = [
   {
     title: "DUKE CHRONICLE",
     subtitle: "Staff Photographer",
-    description: "Description",
+    description:
+      "Description with filler text to be replaced later. Does this fix the spacing issue? I think the two grid rows are split evenly right now. This should make the first row less tall because the fit to content height didn't work",
     imgUrl: ICON_LIST.chronicle2,
     page: "/#/",
     externalUrl: URL_LIST.test,

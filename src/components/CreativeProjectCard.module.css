@@ -19,7 +19,7 @@
 }
 
 .titleContainer {
-  margin-top: 10px;
+  margin-top: 5px;
   margin-left: 5px;
   margin-right: 5px;
   display: flex;
@@ -31,7 +31,6 @@
   font-weight: bold;
   font-family: pix;
 }
-
 .subtitle {
   margin-left: 3px;
   font-family: "Ubuntu Sans Mono";
@@ -55,7 +54,6 @@
 .projectImage {
   width: 140px;
   height: 140px;
-  filter: drop-shadow(-4px 4px 4px #06496070);
 }
 
 .projectImage img {
@@ -70,12 +68,6 @@
   margin-bottom: 15px;
   margin-right: 8px;
   margin-left: 5px;
-}
-
-.description {
-  margin-top: 5px;
-  margin-bottom: 0px;
-  margin-left: 3px;
 }
 
 .buttonContainer {
@@ -100,18 +92,29 @@
   text-decoration: none;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-@media (max-width: 700) {
+@media (max-width: 700px) {
   .projectContainer {
+    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
+    grid-row: auto auto;
+  }
+
+  .imageContainer {
+    grid-row: 1;
   }
 
   .titleContainer {
     grid-row: 1;
+  }
+
+  .descriptionContainer {
+    grid-column: 1 / span 2;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   .title {
@@ -121,8 +124,6 @@
   }
 
   .imageContainer {
-    grid-row: 1;
-    margin-bottom: 2px;
     width: 100px;
     height: 100px;
     border-image-width: 10px;
@@ -131,16 +132,5 @@
   .projectImage {
     width: 80px;
     height: 80px;
-  }
-
-  .descriptionContainer {
-    grid-column: 1 / span 2;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-
-  .buttonContainer {
-    flex-direction: column;
-    gap: 20px;
   }
 }

@@ -11,9 +11,9 @@ export default function Creative() {
           alt="creative"
         ></img>
       </div>
-      <CreativeProjectCard content={creativeProjectList[0]} />
-      <CreativeProjectCard content={creativeProjectList[1]} />
-      <CreativeProjectCard content={creativeProjectList[2]} />
+      <CreativeProjectCard {...creativeProjectList[0]} />
+      <CreativeProjectCard {...creativeProjectList[1]} />
+      <CreativeProjectCard {...creativeProjectList[2]} />
     </div>
   );
 }
