@@ -28,7 +28,7 @@ export const creativeProjectList: CreativeProjectList[] = [
   },
   {
     title: "WXDU CAMPUS RADIO",
-    subtitle: "Weekly Playlist DJ",
+    subtitle: "Playlist DJ",
     description: "Description",
     imgUrl: ICON_LIST.wxdu2,
     externalUrl: URL_LIST.test,

@@ -19,7 +19,7 @@
 }
 
 .titleContainer {
-  margin-top: 5px;
+  margin-top: 8px;
   margin-left: 5px;
   margin-right: 5px;
   display: flex;
@@ -40,7 +40,7 @@
 
 .imageContainer {
   grid-row: 1 / span 2;
-  margin: 10px;
+  margin: 5px;
   width: 165px;
   height: 165px;
   border-image: url("../assets/icons/IconContainer2.png");
@@ -67,12 +67,12 @@
   margin-top: 2px;
   margin-bottom: 15px;
   margin-right: 8px;
-  margin-left: 5px;
+  margin-left: 8px;
 }
 
 .buttonContainer {
-  margin-top: 10px;
-  margin-left: 5px;
+  margin-top: 12px;
+  margin-left: 2px;
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -99,7 +99,7 @@
 @media (max-width: 700px) {
   .projectContainer {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100px 1fr;
     grid-row: auto auto;
   }
 
@@ -109,6 +109,7 @@
 
   .titleContainer {
     grid-row: 1;
+    justify-content: top;
   }
 
   .descriptionContainer {
@@ -118,19 +119,52 @@
   }
 
   .title {
-    font-size: 20px;
-    margin-top: 5px;
+    font-size: 22px;
+    margin-top: 0px;
     margin-bottom: 0px;
+    line-height: 25px;
   }
 
   .imageContainer {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border-image-width: 10px;
   }
 
   .projectImage {
     width: 80px;
     height: 80px;
+  }
+
+  .descriptionContainer {
+    margin-top: 2px;
+    margin-bottom: 10px;
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+
+  .buttonContainer {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 3px;
+    border-image-width: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .title {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .button {
+    font-size: 12px;
+    padding: 3px;
+    border-image-width: 10px;
   }
 }
