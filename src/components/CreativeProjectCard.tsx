@@ -1,6 +1,7 @@
 import { Component } from "react";
 import { CreativeProjectList } from "../data/creativeData";
 import styles from "./CreativeProjectCard.module.css";
+import { NavLink } from "react-router-dom";
 
 export class CreativeProjectCard extends Component<CreativeProjectList> {
   img = require(`../${this.props.imgUrl}`);
@@ -20,13 +21,12 @@ export class CreativeProjectCard extends Component<CreativeProjectList> {
           <p className={styles.description}>{this.props.description}</p>
           <div className={styles.buttonContainer}>
             {this.props.page && (
-              <div
+              <NavLink
                 className={styles.button}
-                role="button"
-                onClick={() => window.open(this.props.page)}
+                to={`/Creative/${this.props.page}`}
               >
-                HIGHLIGHTS
-              </div>
+                SEE MORE
+              </NavLink>
             )}
             {this.props.externalUrl && (
               <div

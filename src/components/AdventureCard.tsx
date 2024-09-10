@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { AdventureList } from "../data/adventureData";
+import { NavLink } from "react-router-dom";
 import styles from "./AdventureCard.module.css";
 
 export class AdventureCard extends Component<AdventureList> {
@@ -17,7 +18,12 @@ export class AdventureCard extends Component<AdventureList> {
         <div className={styles.descriptionContainer}>
           <p>{this.props.description}</p>
           <div className={styles.buttonContainer}>
-            <div className={styles.button}>SEE MORE</div>
+            <NavLink
+              className={styles.button}
+              to={`/Adventure/${this.props.page}`}
+            >
+              SEE MORE
+            </NavLink>
           </div>
         </div>
       </div>
