@@ -6,6 +6,8 @@ export const URL_LIST = {
   starify: "https://github.com/sydlester/starify-app",
   miniAmazon: "https://github.com/sydlester/mini-amazon-cs316",
   test: "https://github.com/sydlester/",
+  chronicle: "https://www.dukechronicle.com/staff/sydney-lester",
+  wxdu: "https://wxdu.org/plmanager/world/djplaylists.php?id=799",
 };
 
 export const ICON_LIST = {

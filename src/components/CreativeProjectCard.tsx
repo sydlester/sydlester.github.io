@@ -34,7 +34,9 @@ export class CreativeProjectCard extends Component<CreativeProjectList> {
                 role="button"
                 onClick={() => window.open(this.props.externalUrl)}
               >
-                PUBLISHED
+                {this.props.title === "DUKE CHRONICLE"
+                  ? "PUBLISHED"
+                  : "MY PLAYLISTS"}
               </div>
             )}
           </div>

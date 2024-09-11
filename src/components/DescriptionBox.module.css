@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Ubuntu+Sans+Mono&display=swap");
+@font-face {
+  font-family: pix;
+  src: url(/src/style/dogicapixel.ttf);
+}
+
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.descriptionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #faccef;
+  padding: 10px;
+
+  border-image: url("../assets/UI/Border-Pink.png");
+  border-image-slice: 49% fill;
+  border-image-width: 12px;
+  border-image-outset: 6px;
+}
+
+.description {
+  font-family: "Ubuntu Sans Mono", monospace;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
