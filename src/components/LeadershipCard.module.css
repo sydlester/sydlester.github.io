@@ -52,6 +52,14 @@
   margin-bottom: 0px;
 }
 
+.description {
+  font-size: 16px;
+  font-family: "Ubuntu Sans Mono";
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
 .readMore {
   cursor: pointer;
   font-size: 16px;

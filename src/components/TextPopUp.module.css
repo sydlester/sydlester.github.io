@@ -42,12 +42,22 @@
   width: 300px;
   height: 400px;
   background-color: #faccef;
-  padding: 15px;
+  padding: 3px 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   border-image: url("../assets/UI/Border-Pink.png");
-  border-image-slice: 49% fill;
+  border-image-slice: 40% fill;
   border-image-width: 15px;
   border-image-outset: 5px;
+}
+
+.text {
+  width: 290px;
+  height: 390px;
+  overflow: scroll;
 }
 
 .close img {
@@ -56,14 +66,14 @@
 }
 
 .title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   font-family: pix;
   /* padding: 5px; */
   /* border-bottom: 8px solid #000;
   border-image: url("../assets/UI/Border-Blue-Center.png") 25 10 fill; */
   margin-bottom: 5px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .subtitle {
@@ -75,8 +85,7 @@
 }
 
 .description {
-  font-size: 18px;
-  /* padding: 5px; */
+  font-size: 17px;
   color: #000;
   font-weight: bold;
   font-family: "Ubuntu Sans Mono";

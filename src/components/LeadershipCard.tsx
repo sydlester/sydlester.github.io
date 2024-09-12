@@ -28,11 +28,13 @@ export class LeadershipCard extends Component<LeadershipCardProps> {
               {this.props.content.title}
             </a>
           </h3>
-          <p>{this.props.content.description}</p>
+          <span className={styles.description}>
+            {this.props.content.description}
+          </span>
           {this.props.onReadMore && (
-            <div className={styles.readMore} onClick={this.props.onReadMore}>
-              read more...
-            </div>
+            <span className={styles.readMore} onClick={this.props.onReadMore}>
+              ...read more
+            </span>
           )}
         </div>
       </div>

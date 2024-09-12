@@ -91,7 +91,8 @@ export const popUpList: PopUpList[] = [
   {
     title: "Teaching Assistant",
     subtitle: "Discrete Math for CS, Spring 2024",
-    description: "Longer Description",
+    description:
+      "Held office hours to individually assist students with assignments and supplement understanding of course content including logic, proofs, combinatorics, and graph theory. Worked with a small team to develop TA training materials, write sample solutions, and guide grading policies for the proofs and inductions portion of the course. Graded assignments and examinations, and worked with the teaching team to evaluate and adjust practices throughout the course",
   },
   {
     title: "Research Intern",

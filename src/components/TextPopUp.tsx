@@ -14,12 +14,14 @@ const TextPopUp = ({ content, onClose }: TextPopUpProps) => {
           <img src={require("../assets/UI/X.png")} alt="close" />
         </div>
         <div className={styles.innerContainer}>
-          <div className={styles.title}>{content.title}</div>
-          <div className={styles.subtitle}>{content.subtitle}</div>
-          {content.subtitle2 && (
-            <div className={styles.subtitle}>{content.subtitle2}</div>
-          )}
-          <div className={styles.description}>{content.description}</div>
+          <div className={styles.text}>
+            <div className={styles.title}>{content.title}</div>
+            <div className={styles.subtitle}>{content.subtitle}</div>
+            {content.subtitle2 && (
+              <div className={styles.subtitle}>{content.subtitle2}</div>
+            )}
+            <div className={styles.description}>{content.description}</div>
+          </div>
         </div>
       </div>
     </div>
