@@ -25,6 +25,9 @@ export const ICON_LIST = {
   wxdu2: "assets/icons/HeadphonesIcon.png",
   art: "assets/icons/PaintIcon.png",
   chronicle2: "assets/icons/Camera2Icon.png",
+  ski2: "assets/icons/Snowboard2Icon.png",
+  nz: "assets/icons/Fern2Icon.png",
+  duke2: "assets/icons/Duke2Icon.png",
 };
 
 export interface ImgPopUpList {

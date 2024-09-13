@@ -1,4 +1,4 @@
-import { URL_LIST } from "../const";
+import { ICON_LIST } from "../const";
 
 export interface AdventureList {
   title: string;
@@ -11,19 +11,19 @@ export const adventureList: AdventureList[] = [
   {
     title: "DUKE SKI & BOARD",
     description: "Description",
-    imgUrl: URL_LIST.noImage,
+    imgUrl: ICON_LIST.ski2,
     page: "Ski",
   },
   {
     title: "NEW ZEALAND",
     description: "Description",
-    imgUrl: URL_LIST.noImage,
+    imgUrl: ICON_LIST.nz,
     page: "NewZealand",
   },
   {
     title: "CAMERON CRAZIES",
     description: "Description",
-    imgUrl: URL_LIST.noImage,
+    imgUrl: ICON_LIST.duke2,
     page: "Duke",
   },
 ];

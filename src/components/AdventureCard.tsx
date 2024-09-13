@@ -4,12 +4,13 @@ import { NavLink } from "react-router-dom";
 import styles from "./AdventureCard.module.css";
 
 export class AdventureCard extends Component<AdventureList> {
+  img = require(`../${this.props.imgUrl}`);
   render() {
     return (
       <div className={styles.projectContainer}>
         <div className={styles.imageContainer}>
           <div className={styles.projectImage}>
-            <img src={this.props.imgUrl} alt={this.props.title} />
+            <img src={this.img} alt={this.props.title} />
           </div>
         </div>
         <div className={styles.titleContainer}>
