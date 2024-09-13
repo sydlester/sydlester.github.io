@@ -19,10 +19,7 @@ const testData = [
 export default function VisualArts() {
   return (
     <div className={styles.wrapper}>
-      <div className={styles.header}>
-        <h1>VISUAL ARTS</h1>
-      </div>
-      <DescriptionBox description="description" />
+      <DescriptionBox title="VISUAL ARTS" description="description" />
       <div className={styles.images}>
         <CaptionedImage
           imgUrl={testData[0].imgUrl}

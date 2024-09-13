@@ -14,10 +14,7 @@ const testData = [
 export default function Ski() {
   return (
     <div className={styles.wrapper}>
-      <div className={styles.header}>
-        <h1>CLUB SKI & SNOWBOARD</h1>
-      </div>
-      <DescriptionBox description="description" />
+      <DescriptionBox title="CLUB SKI & SNOWBOARD" description="description" />
       <div className={styles.images}>
         <CaptionedImage
           imgUrl={testData[0].imgUrl}

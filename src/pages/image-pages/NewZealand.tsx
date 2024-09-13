@@ -14,10 +14,7 @@ const testData = [
 export default function NewZealand() {
   return (
     <div className={styles.wrapper}>
-      <div className={styles.header}>
-        <h1>NEW ZEALAND</h1>
-      </div>
-      <DescriptionBox description="description" />
+      <DescriptionBox title="NEW ZEALAND" description="description" />
       <div className={styles.images}>
         <CaptionedImage
           imgUrl={testData[0].imgUrl}

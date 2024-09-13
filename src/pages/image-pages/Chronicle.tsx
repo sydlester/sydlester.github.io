@@ -19,10 +19,7 @@ const testData = [
 export default function Chronicle() {
   return (
     <div className={styles.wrapper}>
-      <div className={styles.header}>
-        <h1>CHRONICLE</h1>
-      </div>
-      <DescriptionBox description="Chronicle description" />
+      <DescriptionBox title="CHRONICLE" description="Chronicle description" />
       <div className={styles.images}>
         <CaptionedImage
           imgUrl={testData[0].imgUrl}

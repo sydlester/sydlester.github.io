@@ -55,9 +55,12 @@
 }
 
 .text {
-  width: 290px;
   height: 390px;
-  overflow: scroll;
+  width: 290px;
+
+  overflow-y: scroll;
+  scroll-margin-bottom: 10px;
+  scrollbar-width: none;
 }
 
 .close img {
