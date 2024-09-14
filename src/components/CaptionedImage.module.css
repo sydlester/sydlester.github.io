@@ -3,8 +3,8 @@
 .container {
   border-image: url("../assets/icons/IconContainer2.png");
   border-image-slice: 40% fill;
-  border-image-width: 12px;
-  border-image-outset: 6px;
+  border-image-width: 18px;
+  border-image-outset: 10px;
   padding: 2px;
   margin: 6px;
   display: flex;
@@ -14,7 +14,7 @@
 }
 
 .image {
-  width: 100%;
+  max-width: 300px;
 
   border-image: url("../assets/icons/IconContainerDivider.png");
   border-image-slice: 15;
