@@ -54,6 +54,7 @@
 .projectImage {
   width: 140px;
   height: 140px;
+  filter: drop-shadow(-4px 4px 4px #06496070);
 }
 
 .projectImage img {

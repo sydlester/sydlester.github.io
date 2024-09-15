@@ -24,9 +24,8 @@ const Intro = () => {
         <div className={styles.buttons}>
           <a
             className={styles.resumeBtn}
-            href={URL_LIST.resume}
-            target="_blank"
-            rel="noreferrer"
+            href="Sydney-Lester-Resume.pdf"
+            download="Sydney-Lester-Resume.pdf"
           >
             <MdOutlineFileDownload style={{ fontSize: "20px" }} />
             RESUME

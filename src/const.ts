@@ -11,7 +11,6 @@ export const URL_LIST = {
 };
 
 export const ICON_LIST = {
-  noImage: "assets/noImage.png",
   duke: "assets/icons/DukeIcon.png",
   blooket: "assets/icons/BlooketIcon.png",
   teaching: "assets/icons/GraphIcon.png",
@@ -29,27 +28,3 @@ export const ICON_LIST = {
   nz: "assets/icons/Fern2Icon.png",
   duke2: "assets/icons/Duke2Icon.png",
 };
-
-export interface ImgPopUpList {
-  img: string;
-  text: string;
-}
-
-export const imgPopUpList: ImgPopUpList[] = [
-  {
-    img: URL_LIST.noImage,
-    text: "picture 1",
-  },
-  {
-    img: URL_LIST.noImage,
-    text: "picture 2",
-  },
-  {
-    img: URL_LIST.noImage,
-    text: "picture 3",
-  },
-  {
-    img: URL_LIST.noImage,
-    text: "picture 4",
-  },
-];
