@@ -13,7 +13,7 @@ export default function Adventure() {
       </div>
       <AdventureCard {...adventureList[0]} />
       <AdventureCard {...adventureList[1]} />
-      <AdventureCard {...adventureList[2]} />
+      {/* <AdventureCard {...adventureList[2]} /> */}
     </div>
   );
 }

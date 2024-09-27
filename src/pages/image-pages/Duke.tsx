@@ -19,11 +19,11 @@ export default function Duke() {
         description="Chronicle description"
       />
       <div className={styles.images}>
-        <CaptionedImage
+        {/* <CaptionedImage
           imgUrl={testData[0].imgUrl}
           alt={testData[0].alt}
           caption={testData[0].caption}
-        />
+        /> */}
       </div>
     </div>
   );

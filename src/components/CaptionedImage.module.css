@@ -7,24 +7,22 @@
   border-image-outset: 10px;
   box-shadow: 10px 10px 10px rgba(0, 0, 144, 0.5);
   padding: 2px;
-  margin: 6px;
-  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  width: 300px;
+  width: 100%;
   height: fit-content;
 }
 
 .image {
-  width: 300px;
+  width: 100%;
 
   border-image: url("../assets/icons/IconContainerDivider.png");
   border-image-slice: 15;
   border-image-width: 0 0 6px 0;
-  border-image-outset: 0 0 2.5px 0;
+  border-image-outset: 0 0 6px 0;
   border-image-repeat: stretch;
 }
 
@@ -38,24 +36,4 @@
   font-weight: bold;
   padding: 11px 5px 5px 5px;
   text-align: center;
-}
-
-@media (max-width: 880px) {
-  .container {
-    width: 250px;
-  }
-
-  .image {
-    width: 250px;
-  }
-}
-
-@media (max-width: 750px) {
-  .container {
-    width: 100%;
-  }
-
-  .image {
-    width: 100%;
-  }
 }

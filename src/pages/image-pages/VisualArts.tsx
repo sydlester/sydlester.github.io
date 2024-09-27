@@ -1,5 +1,6 @@
 import { DescriptionBox } from "../../components/DescriptionBox";
 import { CaptionedImage } from "../../components/CaptionedImage";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import styles from "./imagePage.module.css";
 
 const artData = [
@@ -81,14 +82,20 @@ export default function VisualArts() {
   return (
     <div className={styles.wrapper}>
       <DescriptionBox title="VISUAL ARTS" description="description" />
-      <div className={styles.images}>
-        {artData.map((img) => (
-          <CaptionedImage
-            imgUrl={img.imgUrl}
-            alt={img.alt}
-            caption={img.caption}
-          />
-        ))}
+      <div className={styles.imageWrapper}>
+        <ResponsiveMasonry
+          columnsCountBreakPoints={{ 350: 1, 750: 2, 1000: 3 }}
+        >
+          <Masonry gutter="40px">
+            {artData.map((img) => (
+              <CaptionedImage
+                imgUrl={img.imgUrl}
+                alt={img.alt}
+                caption={img.caption}
+              />
+            ))}
+          </Masonry>
+        </ResponsiveMasonry>
       </div>
     </div>
   );

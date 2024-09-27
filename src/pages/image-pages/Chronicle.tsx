@@ -1,5 +1,6 @@
 import { DescriptionBox } from "../../components/DescriptionBox";
 import { CaptionedImage } from "../../components/CaptionedImage";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import styles from "./imagePage.module.css";
 
 const chronData = [
@@ -54,14 +55,20 @@ export default function Chronicle() {
   return (
     <div className={styles.wrapper}>
       <DescriptionBox title="CHRONICLE" description="Chronicle description" />
-      <div className={styles.images}>
-        {chronData.map((img) => (
-          <CaptionedImage
-            imgUrl={img.imgUrl}
-            alt={img.alt}
-            caption={img.caption}
-          />
-        ))}
+      <div className={styles.imageWrapper}>
+        <ResponsiveMasonry
+          columnsCountBreakPoints={{ 350: 1, 750: 2, 1000: 3 }}
+        >
+          <Masonry gutter="40px">
+            {chronData.map((img) => (
+              <CaptionedImage
+                imgUrl={img.imgUrl}
+                alt={img.alt}
+                caption={img.caption}
+              />
+            ))}
+          </Masonry>
+        </ResponsiveMasonry>
       </div>
     </div>
   );
