@@ -14,6 +14,7 @@ import TextPopUp from "../components/TextPopUp";
 import { useState } from "react";
 
 const Intro = () => {
+  const resumeURL = require("../SydneyLesterResume.pdf");
   return (
     <div className={styles.introContainer}>
       <div className={styles.profilePic}>
@@ -24,8 +25,8 @@ const Intro = () => {
         <div className={styles.buttons}>
           <a
             className={styles.resumeBtn}
-            href="Sydney-Lester-Resume.pdf"
-            download="Sydney-Lester-Resume.pdf"
+            href={resumeURL}
+            download="SydneyLesterResume.pdf"
           >
             <MdOutlineFileDownload style={{ fontSize: "20px" }} />
             RESUME

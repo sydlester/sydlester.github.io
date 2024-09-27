@@ -46,14 +46,14 @@ export const leadershipList: LeadershipList[] = [
     subtitle: "Some subtitle",
     description: "Some description",
     imgUrl: ICON_LIST.ski,
-    organizationUrl: "https://www.google.com",
+    organizationUrl: "https://www.instagram.com/dukeskiandboard/?hl=en",
   },
   {
     title: "Duke Chronicle",
     subtitle: "Some subtitle",
     description: "Some description",
     imgUrl: ICON_LIST.chronicle,
-    organizationUrl: "https://www.google.com",
+    organizationUrl: "https://www.dukechronicle.com/staff/sydney-lester",
   },
   {
     title: "DTech",
@@ -67,7 +67,7 @@ export const leadershipList: LeadershipList[] = [
     subtitle: "Some subtitle",
     description: "Some description",
     imgUrl: ICON_LIST.wxdu,
-    organizationUrl: "https://www.google.com",
+    organizationUrl: "https://wxdu.org/plmanager/world/djplaylists.php?id=799",
   },
 ];
 
