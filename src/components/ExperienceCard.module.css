@@ -80,7 +80,7 @@
   cursor: pointer;
   font-size: 16px;
   font-family: "Ubuntu Sans Mono";
-  font-weight: normal;
-  /* color: #005299; */
+  font-weight: bold;
+  color: #005299;
   text-decoration: none;
 }

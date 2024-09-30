@@ -59,7 +59,7 @@
 }
 
 .text {
-  height: 390px;
+  height: 385px;
   width: 300px;
 
   overflow-y: scroll;
@@ -97,7 +97,7 @@
 }
 
 .description {
-  padding: 10px 8px 8px 8px;
+  padding: 8px;
   font-size: 17px;
   color: #000;
   font-weight: bold;
