@@ -31,17 +31,21 @@
   height: 30px;
   margin-bottom: 12px;
   top: 0px;
-  left: 300px;
+  left: 295px;
   cursor: pointer;
   z-index: 4;
 }
+.close img {
+  width: 100%;
+  height: 100%;
+}
 
-.innerContainer {
+.contentContainer {
   position: relative;
   bottom: 0;
   width: 300px;
   height: 400px;
-  background-color: #faccef;
+  background-color: #fde8f8;
   padding: 3px 10px;
 
   display: flex;
@@ -51,32 +55,37 @@
   border-image: url("../assets/UI/Border-Pink.png");
   border-image-slice: 40% fill;
   border-image-width: 15px;
-  border-image-outset: 5px;
+  border-image-outset: 3px;
 }
 
 .text {
   height: 390px;
-  width: 290px;
+  width: 300px;
 
   overflow-y: scroll;
   scroll-margin-bottom: 10px;
   scrollbar-width: none;
 }
 
-.close img {
-  width: 100%;
-  height: 100%;
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 5px 8px 5px;
+
+  border-image: url("../assets/UI/Divider_Pink.png");
+  border-image-slice: 12;
+  border-image-width: 0 0 12px 0;
+  border-image-outset: 0 0 6px 0;
+  border-image-repeat: stretch;
 }
 
 .title {
   font-size: 18px;
   font-weight: bold;
   font-family: pix;
-  /* padding: 5px; */
-  /* border-bottom: 8px solid #000;
-  border-image: url("../assets/UI/Border-Blue-Center.png") 25 10 fill; */
   margin-bottom: 5px;
   margin-top: 10px;
+  line-height: 22px;
 }
 
 .subtitle {
@@ -88,6 +97,7 @@
 }
 
 .description {
+  padding: 10px 8px 8px 8px;
   font-size: 17px;
   color: #000;
   font-weight: bold;

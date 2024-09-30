@@ -4,13 +4,8 @@ import { ExperienceCard } from "../components/ExperienceCard";
 import { LeadershipCard } from "../components/LeadershipCard";
 import styles from "./AboutMe.module.css";
 import { URL_LIST } from "../const";
-import {
-  experienceList,
-  leadershipList,
-  PopUpList,
-  popUpList,
-} from "../data/aboutMeData";
-import TextPopUp from "../components/TextPopUp";
+import { experienceList, leadershipList } from "../data/aboutMeData";
+import TextPopUp, { ModalTypes } from "../components/TextPopUp";
 import { useState } from "react";
 
 const Intro = () => {
@@ -69,28 +64,22 @@ const Intro = () => {
 };
 
 export default function AboutMe() {
-  const [showPopUp, setShowPopUp] = useState(false);
-  const [popUpProps, setPopUpProps] = useState<PopUpList>({
-    title: "",
-    subtitle: "",
-    description: "",
-  });
+  const [showModal, setShowModal] = useState(false);
+  const [modalType, setModalType] = useState<ModalTypes>("duke");
 
-  const handleShowPopUp = () => {
-    setShowPopUp(!showPopUp);
+  const handleShowModal = () => {
+    setShowModal(!showModal);
   };
 
-  const handlePopUp = (props: PopUpList) => {
-    setPopUpProps(props);
-    handleShowPopUp();
+  const handleModal = (type: ModalTypes) => {
+    setModalType(type);
+    handleShowModal();
   };
 
   return (
     <div className={styles.wrapper}>
       <Intro />
-      {showPopUp && (
-        <TextPopUp content={popUpProps} onClose={handleShowPopUp} />
-      )}
+      {showModal && <TextPopUp type={modalType} onClose={handleShowModal} />}
       <div className={styles.aboutMeContainer}>
         <div className={styles.aboutMeHeader}>
           <div className={styles.aboutMeTitle}>
@@ -107,22 +96,22 @@ export default function AboutMe() {
             </div>
             <ExperienceCard
               content={experienceList[0]}
-              onReadMore={() => handlePopUp(popUpList[0])}
+              onReadMore={() => handleModal("duke")}
             />
             <div className={styles.aboutMeSubtitle} style={{ width: "150px" }}>
               Experience
             </div>
             <ExperienceCard
               content={experienceList[1]}
-              onReadMore={() => handlePopUp(popUpList[1])}
+              onReadMore={() => handleModal("blooket")}
             />
             <ExperienceCard
               content={experienceList[2]}
-              onReadMore={() => handlePopUp(popUpList[2])}
+              onReadMore={() => handleModal("ta")}
             />
             <ExperienceCard
               content={experienceList[3]}
-              onReadMore={() => handlePopUp(popUpList[3])}
+              onReadMore={() => handleModal("marine")}
             />
           </div>
           <div className={styles.leadershipWrapper}>
@@ -131,11 +120,12 @@ export default function AboutMe() {
             </div>
             <LeadershipCard
               content={leadershipList[0]}
-              onReadMore={() => handlePopUp(popUpList[4])}
+              onReadMore={() => handleModal("ski")}
             />
             <LeadershipCard content={leadershipList[1]} />
             <LeadershipCard content={leadershipList[2]} />
             <LeadershipCard content={leadershipList[3]} />
+            <LeadershipCard content={leadershipList[4]} />
           </div>
         </div>
       </div>
