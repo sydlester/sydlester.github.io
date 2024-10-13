@@ -54,7 +54,10 @@ const chronData = [
 export default function Chronicle() {
   return (
     <div className={styles.wrapper}>
-      <DescriptionBox title="CHRONICLE" description="Chronicle description" />
+      <DescriptionBox
+        title="DUKE CHRONICLE"
+        description="I've learned a lot of lessons as a sports photographer, since it's such a hit-or-miss creative art. Particularly with basketball being a fast paced sport, I’ve unexpectedly had to learn how to predict the players’ next moves, otherwise I'll miss front page-worthy shots. Duke Chronicle has been an incredible opportunity to explore photo journalism (particularly as a college basketball fan). Where else could I find myself chatting with ESPN reporters in the press room and sitting on the court at Cameron Indoor Stadium?"
+      />
       <div className={styles.imageWrapper}>
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 2, 1000: 3 }}

@@ -81,7 +81,10 @@ const artData = [
 export default function VisualArts() {
   return (
     <div className={styles.wrapper}>
-      <DescriptionBox title="VISUAL ARTS" description="description" />
+      <DescriptionBox
+        title="VISUAL ARTS"
+        description="It can be hard to find time to sit down and draw these days. As a busy student, I’ve had to get creative in how I work art into my day-to-day schedule. Whether it’s creating digital assets for coding projects (including all of the UI and icons for this website!) or working on crochet projects while I watch review videos for upcoming exams, I enjoy pretty much any form of visual creative expression. The work featured below includes a little bit of everything: samples from my AP drawing portfolio, merch designs for club ski, tables I’ve painted as gifts for friends, and my most recent endeavor—crochet!"
+      />
       <div className={styles.imageWrapper}>
         <ResponsiveMasonry
           columnsCountBreakPoints={{ 350: 1, 750: 2, 1000: 3 }}

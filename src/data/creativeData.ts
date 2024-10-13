@@ -14,7 +14,7 @@ export const creativeProjectList: CreativeProjectList[] = [
     title: "DUKE CHRONICLE",
     subtitle: "Staff Photographer",
     description:
-      "Description with filler text to be replaced later. Does this fix the spacing issue? I think the two grid rows are split evenly right now. This should make the first row less tall because the fit to content height didn't work",
+      "I am a staff photographer for the Duke Chronicle. I have covered a variety of Duke athletic events, including men’s and women’s basketball, softball, field hockey, and volleyball. I enjoy producing and editing photos in a high pressure environment—particularly basketball. You can see my favorite shots, as well as my published photos below.",
     imgUrl: ICON_LIST.chronicle2,
     page: "Chronicle",
     externalUrl: URL_LIST.chronicle,
@@ -22,14 +22,16 @@ export const creativeProjectList: CreativeProjectList[] = [
   {
     title: "VISUAL ARTS",
     subtitle: "Painting & Drawing",
-    description: "Description",
+    description:
+      "For as long as I can remember, I’ve loved creating art. Starting with crayons as a kid, I’ve tried out pretty much every visual art medium you can think of. I enjoy the process of learning how to create in new ways, and being able to bring ideas to life with a variety of tools. You can see some of my favorite art projects below!",
     imgUrl: ICON_LIST.art,
     page: "Art",
   },
   {
     title: "WXDU CAMPUS RADIO",
     subtitle: "Playlist DJ",
-    description: "Description",
+    description:
+      "I host a weekly radio show at Duke’s campus radio station, WXDU. Over the last few semesters, I have explored a variety of genres represented by the thousands of CDs in WXDU’s library. Even though I’ve hosted shows featuring everything from blue grass folk artists to synth pop, I consistently play tracks that highlight local and independent artists. You can find the archive of all of my show playlists below!",
     imgUrl: ICON_LIST.wxdu2,
     externalUrl: URL_LIST.wxdu,
   },
