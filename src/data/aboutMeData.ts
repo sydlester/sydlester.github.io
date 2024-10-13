@@ -17,7 +17,8 @@ export const experienceList: ExperienceList[] = [
   {
     title: "Software Engineering Intern",
     subtitle: "Blooket, May 2024 - Ongoing",
-    description: "Some description",
+    description:
+      "I have worked on both front end development and single-player arcade game development for blooket.com, a web-based educational tool with ~8 million monthly active users",
     imgUrl: ICON_LIST.blooket,
   },
   {

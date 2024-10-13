@@ -73,10 +73,39 @@ const blooketModal = () => {
   return (
     <div className={styles.text}>
       <div className={styles.titleContainer}>
-        <div className={styles.title}>Software Engineering Intern</div>
-        <div className={styles.subtitle}>Blooket, May 2024 - Ongoing</div>
+        <div className={styles.title}>Staff Software Engineer</div>
+        <div className={styles.subtitle}>Blooket, August 2024 - Ongoing</div>
       </div>
-      <div className={styles.description}>description</div>
+      <div className={styles.description}>
+        <p>
+          Since August, I have been working part-time as a front end developer,
+          where I have developed a library of front-end game components using
+          React and Next.js for blooket.com, a site with ~8 million monthly
+          active users. I have collaborated with other engineers on service
+          integrations, optimizations, and data contracts
+        </p>
+        <p>
+          I designed and implemented gaming and administrative user experience,
+          platform services, microservice APIs, and automations, and created a
+          curriculum management module for educators to design problem sets,
+          lesson objectives, and contests.
+        </p>
+      </div>
+      <div className={styles.titleContainerTop}>
+        <div className={styles.title}>Software Engineering Intern</div>
+        <div className={styles.subtitle}>Blooket, May 2024 - August 2024</div>
+      </div>
+      <div className={styles.description}>
+        <p>
+          As a software engineering intern over the summer, I developed
+          arcade-style and puzzle-based single-player web games using Phaser 3
+          and React.
+        </p>
+        <p>
+          I collaborated with artists and education professionals to optimize
+          the learning and entertainment value of each game
+        </p>
+      </div>
     </div>
   );
 };
@@ -158,7 +187,17 @@ const skiModal = () => {
         <div className={styles.subtitle}>President, 2024-25</div>
         <div className={styles.subtitle}>Equipment Chair, 2023-24</div>
       </div>
-      <div className={styles.description}>description</div>
+      <div className={styles.description}>
+        <p>
+          I am serving as the chief executive of one of the largest non-varsity
+          athletic organization at the University. I have anaged an annual
+          budget of over $100,000, organized training trips, and grew team
+          membership through recruiting and social engagement. Additionally, I
+          have led efforts to improve financial accessibility by establishing
+          scholarships and an inventory of team-owned equipment through grants
+          and sponsorships.
+        </p>
+      </div>
     </div>
   );
 };

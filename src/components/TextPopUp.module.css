@@ -67,7 +67,8 @@
   scrollbar-width: none;
 }
 
-.titleContainer {
+.titleContainer,
+.titleContainerTop {
   display: flex;
   flex-direction: column;
   padding: 0px 5px 8px 5px;
@@ -77,6 +78,12 @@
   border-image-width: 0 0 12px 0;
   border-image-outset: 0 0 6px 0;
   border-image-repeat: stretch;
+}
+
+.titleContainerTop {
+  padding-top: 8px;
+  border-image-width: 12px 0 12px 0;
+  border-image-outset: 6px 0 6px 0;
 }
 
 .title {
