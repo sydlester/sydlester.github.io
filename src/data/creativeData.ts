@@ -23,7 +23,7 @@ export const creativeProjectList: CreativeProjectList[] = [
     title: "VISUAL ARTS",
     subtitle: "Painting & Drawing",
     description:
-      "For as long as I can remember, I’ve loved creating art. Starting with crayons as a kid, I’ve tried out pretty much every visual art medium you can think of. I enjoy the process of learning how to create in new ways, and being able to bring ideas to life with a variety of tools. You can see some of my favorite art projects below!",
+      "For as long as I can remember, I’ve loved creating art. Starting with crayons as a kid, I’ve tried out pretty much every visual art medium you can think of. I enjoy the process of learning how to create in new ways, and being able to bring ideas to life with a variety of tools. You can see my favorite projects below!",
     imgUrl: ICON_LIST.art,
     page: "Art",
   },
