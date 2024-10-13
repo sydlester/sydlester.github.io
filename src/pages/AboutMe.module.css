@@ -34,7 +34,7 @@
   margin: 0 auto;
   display: grid;
   /* TODO: change column sizing for img dimensions */
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 200px 1fr;
   padding-bottom: 15px;
   border-bottom: 2px solid #000;
   margin-bottom: 20px;
@@ -52,7 +52,8 @@
 
 .profilePic {
   margin: 20px;
-  width: 95%;
+  width: 180px;
+  height: 180px;
   border-image: url("../assets/icons/IconContainer2.png");
   border-image-slice: 49% fill;
   border-image-width: 15px;
@@ -182,11 +183,10 @@
   }
 
   .profilePic {
-    max-height: 250px;
-    max-width: 250px;
-    height: 65vw;
-    width: 65vw;
+    height: 200px;
+    width: 200px;
     margin-bottom: 15px;
+    padding: 6px;
     border-image: url("../assets/UI/NewBlueBorder.png");
     border-image-slice: 49% fill;
     border-image-width: 15px;

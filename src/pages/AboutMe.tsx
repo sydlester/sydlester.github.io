@@ -10,10 +10,11 @@ import { useState } from "react";
 
 const Intro = () => {
   const resumeURL = require("../SydneyLesterResume.pdf");
+  const img = require("../images/Headshot.png");
   return (
     <div className={styles.introContainer}>
       <div className={styles.profilePic}>
-        <img src={URL_LIST.noImage} alt="" />
+        <img src={img} alt="" />
       </div>
       <div className={styles.introParagraph}>
         <h1>HI! MY NAME IS SYDNEY.</h1>
