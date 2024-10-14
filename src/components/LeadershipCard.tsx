@@ -17,17 +17,17 @@ export class LeadershipCard extends Component<LeadershipCardProps> {
             <img src={this.img} alt={this.props.content.title} />
           </div>
         </div>
-        <div className={styles.leadershipContent}>
-          <h3>
-            {" "}
-            <a
-              href={this.props.content.organizationUrl}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {this.props.content.title}
-            </a>
-          </h3>
+        <div className={styles.titleContainer}>
+          <a
+            className={styles.title}
+            href={this.props.content.organizationUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {this.props.content.title}
+          </a>
+        </div>
+        <div className={styles.descriptionContainer}>
           <span className={styles.description}>
             {this.props.content.description}
           </span>

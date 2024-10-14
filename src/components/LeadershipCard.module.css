@@ -12,6 +12,7 @@
 }
 
 .imageContainer {
+  grid-row: 1 / span 2;
   margin: 12px;
   width: 90px;
   height: 90px;
@@ -34,30 +35,30 @@
   width: 100%;
 }
 
-.leadershipContent {
-  padding: 8px;
+.titleContainer {
+  padding: 15px;
+  padding-bottom: 0px;
+  grid-row: 1;
 }
 
-.leadershipContent h3 {
-  font-size: 16px;
+.title {
+  font-size: 18px;
+  font-weight: bold;
   font-family: pix;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  color: black;
   line-height: 1.3;
 }
 
-.leadershipContent p {
-  margin-top: 5px;
-  margin-bottom: 0px;
+.descriptionContainer {
+  grid-row: 2;
+  padding: 15px;
+  padding-top: 0px;
 }
 
 .description {
   font-size: 16px;
   font-family: "Ubuntu Sans Mono";
   font-weight: bold;
-  margin-top: 5px;
-  margin-bottom: 0px;
+  margin: 0px;
 }
 
 .readMore {
@@ -67,4 +68,51 @@
   font-weight: bold;
   color: #005299;
   text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .leadershipContainer {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-row: auto auto;
+  }
+
+  .imageContainer {
+    width: 60px;
+    height: 60px;
+    grid-row: 1;
+    margin-bottom: 8px;
+  }
+
+  .leadershipImage {
+    width: 40px;
+    height: 40px;
+  }
+
+  .titleContainer {
+    padding-left: 20px;
+    padding-top: 0px;
+    grid-row: 1;
+    justify-content: top;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .descriptionContainer {
+    grid-column: 1 / span 2;
+    padding: 10px;
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    font-size: 18px;
+  }
+  .description,
+  .readMore {
+    font-size: 14px;
+  }
 }

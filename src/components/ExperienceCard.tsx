@@ -17,9 +17,11 @@ export class ExperienceCard extends Component<ExperienceCardProps> {
             <img src={this.img} alt={this.props.content.title} />
           </div>
         </div>
-        <div className={styles.experienceContent}>
+        <div className={styles.titleContainer}>
           <span className={styles.title}>{this.props.content.title}</span>
           <div className={styles.subtitle}>{this.props.content.subtitle}</div>
+        </div>
+        <div className={styles.descriptionContainer}>
           <span className={styles.description}>
             {this.props.content.description}
           </span>
