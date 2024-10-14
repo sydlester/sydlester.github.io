@@ -8,7 +8,7 @@
   display: grid;
   grid-template-columns: 180px 1fr;
   grid-template-rows: auto auto;
-  background-color: #dbeeff;
+  background-color: #cfeffc;
   padding: 10px;
   margin-bottom: 20px;
 
@@ -110,7 +110,9 @@
 
   .titleContainer {
     grid-row: 1;
-    justify-content: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .descriptionContainer {
