@@ -11,6 +11,24 @@ const artData = [
     caption: 'Angel Statue, 12"x18" Colored Pencil Drawing',
   },
   {
+    // 4:5
+    imgUrl: "images/art/Tiger.png",
+    alt: "Tiger Tapestry",
+    caption: "Crochet Tapestry",
+  },
+  {
+    // 2:3
+    imgUrl: "images/art/Stained_Glass_Portrait.png",
+    alt: "Stained Glass",
+    caption: 'Stained Glass Portrait, 12"x18" Colored Pencil Drawing',
+  },
+  {
+    // 7:5
+    imgUrl: "images/art/Sketchbook_0.png",
+    alt: "Sketchbook 0",
+    caption: "Sketchbook Spread, Colored Pencil",
+  },
+  {
     // 5:6
     imgUrl: "images/art/Arctic_Monkeys_Poster.png",
     alt: "Arctic Monkeys Concert Poster",
@@ -23,10 +41,10 @@ const artData = [
     caption: "Blue Devil Snowboard Sticker, Club Ski & Board Merch, Digital",
   },
   {
-    // 2:3
-    imgUrl: "images/art/Blue_Portrait.png",
-    alt: "Blue Portrait",
-    caption: 'Blue Portait, 12"x18" Colored Pencil Drawing',
+    // 1:2
+    imgUrl: "images/art/Pike_Table.png",
+    alt: "Pike Table",
+    caption: "Table Mural, 4'x8' Acrylic Painting Commission",
   },
   {
     // 2:3
@@ -35,22 +53,16 @@ const artData = [
     caption: 'Melting Portrait, 10"x15" Painting',
   },
   {
-    // 1:2
-    imgUrl: "images/art/Pike_Table.png",
-    alt: "Pike Table",
-    caption: "Table Mural, 4'x8' Acrylic Painting Commission",
+    // 2:3
+    imgUrl: "images/art/Blue_Portrait.png",
+    alt: "Blue Portrait",
+    caption: 'Blue Portait, 12"x18" Colored Pencil Drawing',
   },
   {
     // 4:3
     imgUrl: "images/art/Pineapple_TV_Drawing.png",
     alt: "Pinapple TV",
     caption: 'Pineapple TV, 18"x24" Colored Pencil Drawing',
-  },
-  {
-    // 7:5
-    imgUrl: "images/art/Sketchbook_0.png",
-    alt: "Sketchbook 0",
-    caption: "Sketchbook Spread, Colored Pencil",
   },
   {
     // 5:7
@@ -63,12 +75,6 @@ const artData = [
     imgUrl: "images/art/Ski_Shirt.png",
     alt: "Ski Shirt",
     caption: "Club Ski & Board T-Shirt Design, Digital",
-  },
-  {
-    // 2:3
-    imgUrl: "images/art/Stained_Glass_Portrait.png",
-    alt: "Stained Glass",
-    caption: 'Stained Glass Portrait, 12"x18" Colored Pencil Drawing',
   },
   {
     // 2:5
