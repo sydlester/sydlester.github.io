@@ -80,9 +80,8 @@ const blooketModal = () => {
         <p>
           Since August, I have been working part-time as a front end developer,
           where I have developed a library of front-end game components using
-          React and Next.js for blooket.com, a site with ~8 million monthly
-          active users. I have collaborated with other engineers on service
-          integrations, optimizations, and data contracts
+          React and Next.js for blooket.com. I have collaborated with other
+          engineers on service integrations, optimizations, and data contracts
         </p>
         <p>
           I designed and implemented gaming and administrative user experience,
@@ -98,8 +97,7 @@ const blooketModal = () => {
       <div className={styles.description}>
         <p>
           As a software engineering intern over the summer, I developed
-          arcade-style and puzzle-based single-player web games using Phaser 3
-          and React.
+          single-player web games using Phaser 3 and React.
         </p>
         <p>
           I collaborated with artists and education professionals to optimize
