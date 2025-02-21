@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { MdOutlineFileDownload } from "react-icons/md";
+// import { MdOutlineFileDownload } from "react-icons/md";
 import { ExperienceCard } from "../components/ExperienceCard";
 import { LeadershipCard } from "../components/LeadershipCard";
 import styles from "./AboutMe.module.css";
@@ -9,7 +9,7 @@ import TextPopUp, { ModalTypes } from "../components/TextPopUp";
 import { useState } from "react";
 
 const Intro = () => {
-  const resumeURL = require("../SydneyLesterResume.pdf");
+  // const resumeURL = require("../SydneyLesterResume.pdf");
   const img = require("../images/Headshot.png");
   return (
     <div className={styles.introContainer}>
@@ -19,14 +19,14 @@ const Intro = () => {
       <div className={styles.introParagraph}>
         <h1>HI! MY NAME IS SYDNEY.</h1>
         <div className={styles.buttons}>
-          <a
+          {/* <a
             className={styles.resumeBtn}
             href={resumeURL}
             download="SydneyLesterResume.pdf"
           >
             <MdOutlineFileDownload style={{ fontSize: "20px" }} />
             RESUME
-          </a>
+          </a> */}
           <a
             href={URL_LIST.github}
             className={styles.gitIcon}

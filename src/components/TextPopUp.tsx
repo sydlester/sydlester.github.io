@@ -73,7 +73,7 @@ const blooketModal = () => {
   return (
     <div className={styles.text}>
       <div className={styles.titleContainer}>
-        <div className={styles.title}>Staff Software Engineer</div>
+        <div className={styles.title}>Part-Time Software Engineer</div>
         <div className={styles.subtitle}>Blooket, August 2024 - Ongoing</div>
       </div>
       <div className={styles.description}>
